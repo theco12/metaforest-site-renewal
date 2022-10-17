@@ -15,6 +15,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/header.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -30,6 +32,7 @@
 
     <!-- JS -->
     <script src="/js/custom.js" defer></script>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   </head>
@@ -44,8 +47,8 @@
         </div>
 
         <ul class="nav__menu">
-          <li><a href="#">서비스 소개</a></li>
-          <li><a href="#">회원가입</a></li>
+          <li><a href="#" class="menu">서비스 소개</a></li>
+          <li><a href="#" class="menu">회원가입</a></li>
           <li><a href="#" class="btn_login">로그인</a></li>
           <li><a href="#" class="btn_FAQ">도입문의</a></li>
         </ul>
@@ -76,22 +79,22 @@
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="./image/mobile1.jpg" alt="메타포레스트모비일1" />
+                    <img src="./image/mobile6.jpg" alt="메타포레스트모비일1" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./image/mobile2.jpg" alt="메타포레스트모비일2" />
+                    <img src="./image/mobile5.jpg" alt="메타포레스트모비일2" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./image/mobile3.jpg" alt="메타포레스트모비일3" />
+                    <img src="./image/mobile2.jpg" alt="메타포레스트모비일3" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./image/mobile4.jpg" alt="메타포레스트모비일4" />
+                    <img src="./image/mobile3.jpg" alt="메타포레스트모비일4" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./image/mobile5.jpg" alt="메타포레스트모비일5" />
+                    <img src="./image/mobile4.jpg" alt="메타포레스트모비일5" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./image/mobile6.jpg" alt="메타포레스트모비일6" />
+                    <img src="./image/mobile1.jpg" alt="메타포레스트모비일6" />
                   </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -106,8 +109,25 @@
           </div>
         </div>
 
+        <!-- popup -->
+        <div class="popup" id="popup-1">
+          <div class="overlay"></div>
+          <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <iframe
+              width="1280"
+              height="720"
+              src="https://www.youtube.com/embed/NEePHXsvatQ"
+              title="메타포레스트 소개영상"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
         <div class="main_button">
-          <button class="viedo">
+          <button type="submit" class="viedo" onclick="togglePopup()">
             <img src="./image/arrow.png" alt="삼각형" /> 소개영상보기
           </button>
           <button class="contact" onclick="">도입문의하기</button>
@@ -117,11 +137,136 @@
 
     <!-- section2 -->
     <section class="section2_container">
-      <div class="inner">
+      <div class="section_inner">
         <div class="section2_text">
-          <h4>어떻게 메타버스에서도 검증된 심리상담이 가능할까요?</h4>
+          <h4>어떻게 메타버스에서도 <br />검증된 심리상담이 가능할까요?</h4>
+          <p>
+            <span style="font-weight: 800"
+              >메타포레스트는 멘탈 헬스, 심리상담 전문가</span
+            >가<br />철저한 검증을 거쳐 만들고 있습니다
+          </p>
+        </div>
+        <div class="section2_icon">
+          <div class="icon_image">
+            <img
+              src="./image/newblue_main_sample01.png"
+              width="160px"
+              height="160px"
+              alt="1"
+            />
+            <h2>
+              대학과 협약을 통한 공동연구 및<br />
+              메타버스 플랫폼을 활용한 논문 게재
+            </h2>
+            <p>
+              고려대, 계명대, 광운대, 조선대, 호서대 등 협약<br />
+              + 심리상담 2대 메이저 학회 발표 등
+            </p>
+          </div>
+          <div class="icon_image">
+            <img
+              src="./image/newblue_main_sample01.png"
+              width="160px"
+              height="160px"
+              alt="1"
+            />
+            <h2>검증된 심리검사지</h2>
+            <p>심리상담 전문가의 검증을 거쳐 신뢰할 수 있는 심리검사지 사용</p>
+          </div>
+          <div class="icon_image">
+            <img
+              src="./image/newblue_main_sample01.png"
+              width="160px"
+              height="160px"
+              alt="1"
+            />
+            <h2>메타버스 심리상담 전문 인력</h2>
+            <p>심리상담 전문가로 구성된 전담팀 보유</p>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- section3 -->
+    <section class="section3_container">
+      <div class="section_inner">
+        <div class="section3_text">
+          <h4>어떻게 메타버스에서도 <br />검증된 심리상담이 가능할까요?</h4>
+          <p>
+            <span style="font-weight: 800"
+              >메타포레스트는 멘탈 헬스, 심리상담 전문가</span
+            >가<br />철저한 검증을 거쳐 만들고 있습니다
+          </p>
+        </div>
+        <div class="section3_icon">
+          <div class="icon_image">
+            <img
+              src="./image/newblue_main_sample01.png"
+              width="160px"
+              height="160px"
+              alt="1"
+            />
+            <h2>실시간 모션트레킹</h2>
+            <p>웹캠으로 전신 모션트래킹 구현 기술 보유</p>
+          </div>
+          <div class="icon_image">
+            <img
+              src="./image/newblue_main_sample01.png"
+              width="160px"
+              height="160px"
+              alt="1"
+            />
+            <h2>검증된 심리검사지</h2>
+            <p>심리상담 전문가의 검증을 거쳐 신뢰할 수 있는 심리검사지 사용</p>
+          </div>
+          <div class="icon_image">
+            <img
+              src="./image/newblue_main_sample01.png"
+              width="160px"
+              height="160px"
+              alt="1"
+            />
+            <h2>메타버스 심리상담 전문 인력</h2>
+            <p>심리상담 전문가로 구성된 전담팀 보유</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section4 -->
+    <section class="section4_container">
+      <div class="section_inner">
+        <div class="section4_text">
+          <h4>원하는 페이스 모드로 <br />자유로운 심리상담을 경험해보세요!</h4>
+          <p>
+            <span style="font-weight: 800">얼굴 공개 No! 얼굴 공개 Yes! </span
+            ><br />원하는대로 소통할 자유를 만끽하세요
+          </p>
+        </div>
+        <div class="section4_icon">
+          <div class="icon_image">
+            <img
+              src="./image/newblue_main_sample01.png"
+              width="160px"
+              height="160px"
+              alt="1"
+            />
+            <h2>실시간 모션트레킹</h2>
+            <p>웹캠으로 전신 모션트래킹 구현 기술 보유</p>
+          </div>
+          <div class="icon_image">
+            <img
+              src="./image/newblue_main_sample01.png"
+              width="160px"
+              height="160px"
+              alt="1"
+            />
+            <h2>검증된 심리검사지</h2>
+            <p>심리상담 전문가의 검증을 거쳐 신뢰할 수 있는 심리검사지 사용</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </body>
 </html>
