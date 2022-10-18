@@ -10,12 +10,9 @@ toggle.addEventListener("click", () => {
 var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
-    dynamicBullets: true,
   },
 });
 
 function togglePopup() {
   document.getElementById("popup-1").classList.toggle("active");
 }
-
-
