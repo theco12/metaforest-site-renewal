@@ -8,10 +8,23 @@
 .footer_inner {
   max-width: 1440px;
   margin: 0 auto;
+  position: relative;
+  top: 35px;
 }
 
-.footer_icon {
-  position: relative;
-  padding-left: 35px;
-  background: url("./image/");
+.footer_content {
+  line-height: 18px;
+}
+
+.footer_title h3 {
+  font-size: 14px;
+}
+
+.footer_content li {
+  font-size: 11px;
+}
+
+.footer_text .copy {
+  font-size: 9px;
+  color: #969696;
 }
