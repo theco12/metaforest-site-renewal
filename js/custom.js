@@ -26,3 +26,13 @@ var flkty = new Flickity(elem, {
   wrapAround: true,
   pageDots: false,
 });
+
+var elem = document.querySelector(".grid-slider-wrap2");
+var flkty = new Flickity(elem, {
+  // options
+  cellAlign: "center",
+  contain: true,
+  groupCells: true,
+  wrapAround: true,
+  pageDots: false,
+});
