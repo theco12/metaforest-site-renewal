@@ -7,11 +7,7 @@ toggle.addEventListener("click", () => {
 
 // <!-- Initialize Swiper -->
 
-var swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
+var swiper = new Swiper(".mySwiper", {});
 
 function togglePopup() {
   document.getElementById("popup-1").classList.toggle("active");

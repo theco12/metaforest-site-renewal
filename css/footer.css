@@ -32,3 +32,15 @@ body {
   font-size: 9px;
   color: #969696;
 }
+
+@media screen and (max-width: 768px) {
+  .footer_inner {
+    max-width: 440px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1475px) {
+  .footer_inner {
+    max-width: 1000px;
+  }
+}

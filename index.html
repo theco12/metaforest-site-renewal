@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/contactus.css" />
-    <!-- <link rel="stylesheet" href="css/flickity-slider.css" /> -->
+
     <!-- CSS -->
     <link
       rel="stylesheet"
@@ -69,44 +69,29 @@
 
     <!-- section_main -->
     <section class="main_banner">
-      <div class="main_inner">
-        <div class="main_image">
-          <div class="fade-in">
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <h2>메타포레스트</h2>
-                  <img src="./image/main_banner.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <h2 style="color: white">
-                    <span style="font-weight: lighter"> 처음만나는</span
-                    >메타버스 심리상담 플랫폼
-                  </h2>
-                  <img src="./image/banner/banner2.png" alt="" />
-                </div>
-                <div class="swiper-slide">메타포레스트</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./image/banner/banner1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./image/banner/banner2.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./image/banner/banner3.png" alt="" />
           </div>
         </div>
-
+      </div>
+      <div class="main_inner">
         <!-- popup -->
         <div class="popup" id="popup-1">
           <div class="overlay"></div>
           <div class="content">
             <div class="close-btn" onclick="togglePopup()">&times;</div>
             <iframe
-              width="1280"
-              height="720"
+              width="854px"
+              height="480px"
               src="https://www.youtube.com/embed/NEePHXsvatQ"
               title="메타포레스트 소개영상"
               frameborder="0"
@@ -115,13 +100,12 @@
             ></iframe>
           </div>
         </div>
-
-        <div class="main_button">
-          <button type="submit" class="viedo" onclick="togglePopup()">
-            <img src="./image/arrow.png" alt="삼각형" /> 소개영상보기
-          </button>
-          <button class="contact" onclick="">도입문의하기</button>
-        </div>
+      </div>
+      <div class="main_button">
+        <button type="submit" class="viedo" onclick="togglePopup()">
+          <img src="./image/arrow.png" alt="삼각형" /> 소개영상보기
+        </button>
+        <button class="contact" onclick="">도입문의하기</button>
       </div>
     </section>
 
@@ -343,8 +327,10 @@
               height="160px"
               alt="1"
             />
-            <h2 class="btn_text">지금 구독 서비스를 알아보세요!</h2>
-            <button class="btn_info">구독문의</button>
+            <div class="section6_btn">
+              <h2 class="btn_text">지금 구독 서비스를 알아보세요!</h2>
+              <button class="btn_info">구독문의</button>
+            </div>
           </div>
         </div>
       </div>
@@ -437,9 +423,10 @@
               height="160px"
               alt="1"
             />
-
-            <h2 class="btn_text darkblue">지금 구독 서비스를 알아보세요!</h2>
-            <button class="btn_info darkblue">구독문의</button>
+            <div class="section8_btn">
+              <h2 class="btn_text darkblue">지금 구독 서비스를 알아보세요!</h2>
+              <button class="btn_info darkblue">구독문의</button>
+            </div>
           </div>
         </div>
       </div>
@@ -456,127 +443,124 @@
         </div>
         <div class="section9_icon">
           <div class="section9_inner">
-            <div class="first_line">
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
+            <div class="partner">
+              <div class="first_line">
+                <img
+                  src="./image/Partner/chosun.png"
+                  width="124px"
+                  height="32px"
+                  alt="조선대"
+                />
+                <img
+                  src="./image/Partner/handong.png"
+                  width="124px"
+                  height="32px"
+                  alt="한동대"
+                />
+                <img
+                  src="./image/Partner/hanyang.png"
+                  width="124px"
+                  height="32px"
+                  alt="한양대"
+                />
+                <img
+                  src="./image/Partner/hoseo.png"
+                  width="124px"
+                  height="32px"
+                  alt="호서대"
+                />
+              </div>
+              <div class="second_line">
+                <img
+                  src="./image/Partner/DSC.gif"
+                  width="124px"
+                  height="32px"
+                  alt="DSC"
+                />
+                <img
+                  src="./image/Partner/deepvisions.png"
+                  width="124px"
+                  height="32px"
+                  alt="deepvisions"
+                />
+                <img
+                  src="./image/Partner/busan.gif"
+                  width="144px"
+                  height="32px"
+                  alt="부산해운대"
+                />
+                <img
+                  src="./image/Partner/qebhos.jpg"
+                  width="134px"
+                  height="36px"
+                  alt="수돗물시민네트워크"
+                />
+                <img
+                  src="./image/Partner/seon.jpg"
+                  width="144px"
+                  height="32px"
+                  alt="세은심리상담소"
+                />
+              </div>
+              <div class="third_line">
+                <img
+                  src="./image/Partner/jeonbook.png"
+                  width="124px"
+                  height="32px"
+                  alt="전라북도"
+                />
+                <img
+                  src="./image/Partner/korea.png"
+                  width="124px"
+                  height="32px"
+                  alt="고려대"
+                />
+                <img
+                  src="./image/Partner/seoul.png"
+                  width="124px"
+                  height="32px"
+                  alt="서울교대 "
+                />
+                <img
+                  src="./image/Partner/kmu.jpg"
+                  width="124px"
+                  height="32px"
+                  alt="계명대"
+                />
+              </div>
+              <div class="fourth_line">
+                <img
+                  src="./image/Partner/aha.png"
+                  width="124px"
+                  height="32px"
+                  alt="아하심리상담센터"
+                />
+                <img
+                  src="./image/Partner/sch.png"
+                  width="124px"
+                  height="32px"
+                  alt="sch순천향대 "
+                />
+                <img
+                  src="./image/Partner/dajeon.png"
+                  width="194px"
+                  height="32px"
+                  alt="대전청소년상담복지센터"
+                />
+                <img
+                  src="./image/Partner/ulsan.png"
+                  width="154px"
+                  height="32px"
+                  alt="울산대"
+                />
+              </div>
             </div>
-            <div class="second_line">
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
+            <div class="section9_btn">
+              <h2 class="btn_text">
+                교육 | 컨설팅 | 시연 <br />지금 상담 받아보세요!
+              </h2>
+              <button class="btn_info">교육문의</button>
             </div>
-            <div class="third_line">
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
-            </div>
-            <div class="fourth_line">
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
-              <img
-                src="./image/Partner/chosun.png"
-                width="124px"
-                height="32px"
-                alt="조선대"
-              />
-            </div>
-
-            <h2 class="btn_text">
-              교육 | 컨설팅 | 시연 <br />지금 상담 받아보세요!
-            </h2>
-            <button class="btn_info">교육문의</button>
           </div>
         </div>
       </div>

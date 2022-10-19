@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
 li {
   list-style: none;
 }
@@ -5,7 +11,7 @@ li {
 a {
   text-decoration: none;
 }
-/* swiper */
+
 html,
 body {
   position: relative;
@@ -13,19 +19,13 @@ body {
 }
 
 body {
-  background: #f7f7f7;
-  font-family: "Spoqa Han Sans Neo", "sans-serif";
   font-size: 14px;
   color: #000;
-  margin: 0;
-  padding: 0;
 }
 
 .swiper {
-  width: 1920px;
-  height: 1080px;
-  position: relative;
-  right: 232px;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
@@ -54,7 +54,6 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
 .swiper-slide h2 {
   z-index: 30;
   position: absolute;
@@ -64,8 +63,6 @@ body {
 /* section_main */
 
 .main_banner {
-  width: 100%;
-  height: 1000px;
   position: relative;
 }
 
@@ -96,14 +93,6 @@ body {
   font-weight: 600;
 }
 
-.main_banner .main_image .mobile-image {
-  position: absolute;
-  right: -31px;
-  bottom: 150px;
-  z-index: 50;
-  pointer-events: none;
-}
-
 .mobile {
   margin-left: 299;
 }
@@ -111,7 +100,9 @@ body {
 .main_button {
   position: absolute;
   bottom: 110px;
-  left: 500px;
+  left: 0;
+  right: 0;
+  text-align: center;
   z-index: 30;
 }
 
@@ -136,8 +127,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  width: 1280px;
-  height: 720px;
+
   z-index: 100;
   box-sizing: border-box;
 }
@@ -205,32 +195,9 @@ body {
 
   .main_button {
     position: absolute;
-    left: 170px;
-    bottom: -67px;
-  }
-
-  .main_banner .main_image .mobile-image {
-    width: 30%;
-    position: absolute;
-    right: 30px;
-    bottom: 170px;
-    z-index: 80;
-  }
-
-  .swiper {
-    width: 166px;
-    height: 78px;
-    position: relative;
-    top: -73px;
-    left: 435px;
-    z-index: 0;
-    border-radius: 10px;
-  }
-  .main_banner .main_image .notebook-image {
-    width: 90%;
-    position: absolute;
-    right: 40px;
-    bottom: 110px;
+    bottom: 50px;
+    left: 0;
+    right: 0;
   }
 }
 
@@ -249,13 +216,12 @@ body {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 120px;
+  top: 20px;
 }
 
 .section2_text {
   margin: 0 auto;
   text-align: center;
-  padding-left: 60px;
 }
 
 .section2_text h4 {
@@ -305,7 +271,6 @@ body {
 .section3_text {
   margin: 0 auto;
   text-align: center;
-  padding-left: 60px;
 }
 
 .section3_text h4 {
@@ -322,7 +287,6 @@ body {
 .section3_icon {
   display: flex;
   margin-top: 80px;
-  padding-left: 73px;
 }
 
 .section3_icon .icon_image {
@@ -355,7 +319,6 @@ body {
 .section4_text {
   margin: 0 auto;
   text-align: center;
-  padding-left: 60px;
 }
 
 .section4_text h4 {
@@ -372,7 +335,6 @@ body {
 .section4_icon {
   display: flex;
   margin-top: 80px;
-  padding-left: 73px;
 }
 
 .section4_icon .icon_image {
@@ -407,7 +369,6 @@ body {
 .section5_text {
   margin: 0 auto;
   text-align: center;
-  padding-left: 60px;
 }
 
 .section5_text h4 {
@@ -425,6 +386,7 @@ body {
 /* slide */
 .gride-slider-section {
   padding: 50px 0;
+  height: 900px;
 }
 
 .gride-slide {
@@ -441,21 +403,21 @@ body {
   width: 100%;
 }
 
-@media (max-width: 991px) {
+@media (min-width: 1200px) and (max-width: 2000px) {
   .gride-slide {
-    width: 26%;
+    width: 23%;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 575px) and (max-width: 1200px) {
   .gride-slide {
-    width: 30%;
+    width: 49%;
   }
 }
 
 @media (max-width: 575px) {
   .gride-slide {
-    width: 48%;
+    width: 78%;
   }
 }
 
@@ -470,7 +432,8 @@ body {
 .section6_text {
   margin: 0 auto;
   text-align: center;
-  padding-left: 60px;
+  position: relative;
+  top: 23px;
 }
 
 .section6_text h4 {
@@ -481,18 +444,24 @@ body {
 .section6_text p {
   font-size: 18px;
   color: #313131;
-  margin-top: -20px;
+  margin-top: -24px;
 }
 
 .section6_text span {
   color: #ef7a7f;
   font-size: 14px;
+  position: relative;
+  top: -8px;
+}
+
+.section6_btn {
+  position: relative;
+  top: 132px;
 }
 
 .section6_icon {
   display: flex;
   margin-top: 80px;
-  padding-left: 73px;
 }
 
 .section6_icon .icon_image {
@@ -511,7 +480,10 @@ body {
   border: none;
   width: 150px;
   height: 40px;
+  position: relative;
+  top: 10px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .section6_icon .icon_image img {
@@ -533,7 +505,6 @@ body {
 .section7_text {
   margin: 0 auto;
   text-align: center;
-  padding-left: 60px;
 }
 
 .section7_text h4 {
@@ -551,11 +522,12 @@ body {
 /* slide2 */
 .gride-slider-section2 {
   padding: 50px 0;
+  height: 900px;
 }
 
 .gride-slide2 {
   padding: 10px;
-  width: 22%;
+  width: 18%;
 }
 
 .gride-slide-inner2 {
@@ -567,21 +539,21 @@ body {
   width: 100%;
 }
 
-@media (max-width: 991px) {
+@media (min-width: 1200px) and (max-width: 2000px) {
   .gride-slide2 {
-    width: 26%;
+    width: 23%;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 575px) and (max-width: 1200px) {
   .gride-slide2 {
-    width: 30%;
+    width: 49%;
   }
 }
 
 @media (max-width: 575px) {
   .gride-slide2 {
-    width: 48%;
+    width: 78%;
   }
 }
 
@@ -608,10 +580,18 @@ body {
   position: relative;
 }
 
+.section8_inner {
+  text-align: center;
+  margin: 0 auto;
+}
+
 .section8_text {
   margin: 0 auto;
   text-align: center;
-  padding-left: 60px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  left: 0;
 }
 
 .section8_text h4 {
@@ -626,6 +606,11 @@ body {
   margin-bottom: 50px;
 }
 
+.section8_btn {
+  position: relative;
+  top: 412px;
+}
+
 .btn_text.darkblue {
   color: #55689d;
 }
@@ -633,11 +618,6 @@ body {
 .btn_info.darkblue {
   background-color: #55689d;
   cursor: pointer;
-}
-
-.section8_inner {
-  text-align: center;
-  margin: 0 auto;
 }
 
 /* section9 */
@@ -652,24 +632,39 @@ body {
 .section9_text {
   margin: 0 auto;
   text-align: center;
-  padding-left: 60px;
 }
 
 .section9_text h4 {
-  position: relative;
-  bottom: 200px;
   font-size: 25px;
   color: #1fa170;
+  right: 24px;
 }
 
 .section9_text p {
   font-size: 18px;
   color: #2e2e2e;
-  margin-top: -20px;
-  margin-bottom: 50px;
 }
 
 .section9_inner {
   text-align: center;
   margin: 0 auto;
+}
+
+.section9_btn {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 550px;
+}
+
+.partner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 180px;
+}
+
+.partner img {
+  padding: 8px 24px;
+  margin: 5px 0;
 }
