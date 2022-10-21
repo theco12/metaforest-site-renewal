@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/contactus.css" />
+    <link rel="stylesheet" href="css/cert.css" />
 
     <!-- CSS -->
     <link
@@ -40,6 +41,7 @@
 
     <!-- JS -->
     <script src="/js/custom.js" defer></script>
+    <script src="/js/cert.js" defer></script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -55,10 +57,10 @@
         </div>
 
         <ul class="nav__menu">
-          <li><a href="#" class="menu">서비스 소개</a></li>
+          <li><a href="#s2" class="menu">서비스 소개</a></li>
           <li><a href="#" class="menu">회원가입</a></li>
           <li><a href="#" class="btn_login">로그인</a></li>
-          <li><a href="#" class="btn_FAQ">도입문의</a></li>
+          <li><a href="#s10" class="btn_FAQ">도입문의</a></li>
         </ul>
 
         <a class="toggle">
@@ -102,15 +104,19 @@
         </div>
       </div>
       <div class="main_button">
-        <button type="submit" class="viedo" onclick="togglePopup()">
-          <img src="./image/arrow.png" alt="삼각형" /> 소개영상보기
-        </button>
-        <button class="contact" onclick="">도입문의하기</button>
+        <a href="#s3"
+          ><button type="submit" class="viedo" onclick="togglePopup()">
+            <img src="./image/arrow.png" alt="삼각형" /> 소개영상보기
+          </button></a
+        >
+        <a href="#s10"
+          ><button class="contact" onclick="">도입문의하기</button></a
+        >
       </div>
     </section>
 
     <!-- section2 -->
-    <section class="section2_container">
+    <section class="section2_container" id="s2">
       <div class="section_inner">
         <div class="section2_text">
           <h4>어떻게 메타버스에서도 <br />검증된 심리상담이 가능할까요?</h4>
@@ -145,7 +151,9 @@
               alt="1"
             />
             <h2>검증된 심리검사지</h2>
-            <p>심리상담 전문가의 검증을 거쳐 신뢰할 수 있는 심리검사지 사용</p>
+            <p>
+              심리상담 전문가의 검증을 거쳐 <br />신뢰할 수 있는 심리검사지 사용
+            </p>
           </div>
           <div class="icon_image">
             <img
@@ -162,7 +170,7 @@
     </section>
 
     <!-- section3 -->
-    <section class="section3_container">
+    <section class="section3_container" id="s3">
       <div class="section_inner">
         <div class="section3_text">
           <h4>어떻게 메타버스에서도 <br />검증된 심리상담이 가능할까요?</h4>
@@ -185,7 +193,8 @@
             <p>
               특허출원: 클라우드 기반 메타버스 콘텐츠 협업 시스템 등록번호<br />
               제10-2021-0026868호 확장 현실 서버 (Extended Reality Server)<br />
-              등록번호 10-2021-0183318 등록번호 10-2021-0183319
+              등록번호 10-2021-0183318 <br />
+              등록번호 10-2021-0183319
             </p>
           </div>
           <div class="icon_image">
@@ -449,25 +458,31 @@
         <div class="section9_icon">
           <div class="section9_inner">
             <div class="partner">
-              <div class="first_line">
+              <div class="partner_logo">
                 <img
                   src="./image/Partner/chosun.png"
                   width="124px"
                   height="32px"
                   alt="조선대"
                 />
+              </div>
+              <div class="partner_logo">
                 <img
                   src="./image/Partner/handong.png"
                   width="124px"
                   height="32px"
                   alt="한동대"
                 />
+              </div>
+              <div class="partner_logo">
                 <img
                   src="./image/Partner/hanyang.png"
                   width="124px"
                   height="32px"
                   alt="한양대"
                 />
+              </div>
+              <div class="partner_logo">
                 <img
                   src="./image/Partner/hoseo.png"
                   width="124px"
@@ -475,31 +490,32 @@
                   alt="호서대"
                 />
               </div>
-              <div class="second_line">
+              <div class="partner_logo">
                 <img
                   src="./image/Partner/DSC.gif"
                   width="124px"
                   height="32px"
                   alt="DSC"
                 />
+              </div>
+              <div class="partner_logo">
                 <img
                   src="./image/Partner/deepvisions.png"
                   width="124px"
                   height="32px"
                   alt="deepvisions"
                 />
-                <img
-                  src="./image/Partner/busan.gif"
-                  width="144px"
-                  height="32px"
-                  alt="부산해운대"
-                />
+              </div>
+
+              <div class="partner_logo">
                 <img
                   src="./image/Partner/qebhos.jpg"
                   width="134px"
                   height="36px"
                   alt="수돗물시민네트워크"
                 />
+              </div>
+              <div class="partner_logo">
                 <img
                   src="./image/Partner/seon.jpg"
                   width="144px"
@@ -507,25 +523,31 @@
                   alt="세은심리상담소"
                 />
               </div>
-              <div class="third_line">
+              <div class="partner_logo">
                 <img
                   src="./image/Partner/jeonbook.png"
                   width="124px"
                   height="32px"
                   alt="전라북도"
                 />
+              </div>
+              <div class="partner_logo">
                 <img
                   src="./image/Partner/korea.png"
                   width="124px"
                   height="32px"
                   alt="고려대"
                 />
+              </div>
+              <div class="partner_logo">
                 <img
                   src="./image/Partner/seoul.png"
                   width="124px"
                   height="32px"
-                  alt="서울교대 "
+                  alt="서울교대"
                 />
+              </div>
+              <div class="partner_logo">
                 <img
                   src="./image/Partner/kmu.jpg"
                   width="124px"
@@ -533,30 +555,47 @@
                   alt="계명대"
                 />
               </div>
-              <div class="fourth_line">
+              <div class="partner_logo">
                 <img
                   src="./image/Partner/aha.png"
                   width="124px"
                   height="32px"
                   alt="아하심리상담센터"
                 />
+              </div>
+              <div class="partner_logo">
                 <img
                   src="./image/Partner/sch.png"
                   width="124px"
                   height="32px"
                   alt="sch순천향대 "
                 />
-                <img
-                  src="./image/Partner/dajeon.png"
-                  width="194px"
-                  height="32px"
-                  alt="대전청소년상담복지센터"
-                />
+              </div>
+
+              <div class="partner_logo">
                 <img
                   src="./image/Partner/ulsan.png"
                   width="154px"
                   height="32px"
                   alt="울산대"
+                />
+              </div>
+              <div class="partner_logo">
+                <img
+                  class="long long_image1"
+                  src="./image/Partner/busan.gif"
+                  width="144px"
+                  height="32px"
+                  alt="부산해운대"
+                />
+              </div>
+              <div class="partner_logo">
+                <img
+                  class="long long_image2"
+                  src="./image/Partner/dajeon.png"
+                  width="194px"
+                  height="32px"
+                  alt="대전청소년상담복지센터"
                 />
               </div>
             </div>
@@ -572,7 +611,7 @@
     </section>
 
     <!-- section10 -->
-    <section10>
+    <section10 id="s10">
       <div class="contact_container">
         <form onsubmit="sendEmail(); reset(); return false;">
           <div class="title_text">
@@ -939,6 +978,31 @@
       </div>
     </section10>
 
+    <section11>
+      <button>회사소개</button>
+      <div class="sliede">
+        <article class="popup">
+          <ul class="slider">
+            <li>
+              <img src="./image/certification/certification1.jpg" alt="" />
+            </li>
+            <li>
+              <img src="./image/certification/certification2.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/certification/certification3.jpg" alt="" />
+            </li>
+            <li>
+              <img src="./image/certification/certification4.jpg" alt="" />
+            </li>
+            <li>
+              <img src="./image/certification/certification5.jpg" alt="" />
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section11>
+
     <footer>
       <div class="footer_container">
         <div class="footer_inner">
@@ -962,5 +1026,47 @@
 
     <!-- JavaScript -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- slick -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(".slider").slick({
+        centerMode: true,
+        centerPadding: "60px",
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: "40px",
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: "40px",
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    </script>
   </body>
 </html>
