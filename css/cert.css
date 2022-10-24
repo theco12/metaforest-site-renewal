@@ -1,0 +1,48 @@
+.slide_wrapper {
+  position: relative;
+  width: 1440px;
+  height: 510px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slides {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: left 0.5s ease-out;
+}
+
+.slides img {
+  float: left;
+  margin-right: 30px;
+  width: 300px;
+  height: 410px;
+}
+
+.slides li:not(:last-child) {
+  float: left;
+  margin-right: 30px;
+}
+
+.controls {
+  text-align: center;
+}
+
+.controls span {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+
+.controls .prev {
+  position: absolute;
+  left: 0;
+}
+
+.controls .next_slide {
+  position: absolute;
+  right: 0;
+}

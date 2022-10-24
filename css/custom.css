@@ -756,3 +756,75 @@ body {
     margin: 5px 24px;
   }
 }
+
+/* certification slide */
+
+.cert_slide_content {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 100;
+}
+
+.slide_wrapper {
+  position: relative;
+  width: 1440px;
+  height: 510px;
+  margin: 0 auto;
+  overflow: hidden;
+  top: 200px;
+}
+
+.slides {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: left 0.5s ease-out;
+}
+
+.slides img {
+  float: left;
+  margin-right: 30px;
+  width: 300px;
+  height: 410px;
+}
+
+.slides li:not(:last-child) {
+  float: left;
+  margin-right: 30px;
+}
+
+.controls {
+  text-align: center;
+}
+
+.controls span {
+  position: absolute;
+  font-size: 70px;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+
+.controls .prev_slide {
+  position: absolute;
+  top: 360px;
+  left: 130px;
+}
+
+.controls .next_slide {
+  position: absolute;
+  top: 360px;
+  right: 130px;
+}
+
+.controls .cert_close_btn {
+  position: absolute;
+  right: 240px;
+  top: 110px;
+  cursor: pointer;
+}
