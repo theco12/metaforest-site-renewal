@@ -67,14 +67,12 @@ prevBtn.addEventListener("click", function () {
   }
 });
 
-//인증서보기 버튼 클릭시 slidewrapper가 켜짐
+let popup_cert1 = document.getElementById("cert_slide_content");
 
 function cert_Popup() {
-  const popup_cert = document.getElementById("cert_slide_content");
-  popup_cert.style.display = "block";
+  popup_cert1.classList.add("cert_slide_content_open");
 }
 
 function cert_close_Popup() {
-  const popup_cert = document.getElementById("cert_slide_content");
-  popup_cert.style.display = " none";
+  popup_cert1.classList.remove("cert_slide_content_open");
 }
