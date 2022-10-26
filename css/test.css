@@ -1,0 +1,161 @@
+body {
+  background: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  font-family: sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+}
+
+input[type="checkbox"].toggle {
+  display: none;
+}
+
+input[type="checkbox"].toggle + label {
+  display: inline-block;
+  height: 65px;
+  width: 283px;
+  position: relative;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+}
+
+input[type="checkbox"].toggle + label::before {
+  position: absolute;
+  top: 7px;
+  width: 100px;
+  height: 50px;
+  content: "";
+  transition: all 0.3s ease;
+  z-index: 3;
+  border-radius: 30px;
+}
+
+input[type="checkbox"].toggle + label::after {
+  overflow: hidden;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  content: "ON";
+  top: 50%;
+  transform: translateY(-50%);
+  text-shadow: ellipsis;
+}
+
+input[type="checkbox"].toggle:not(:checked) + label {
+  background-color: #ef7a7f;
+  text-align: right;
+}
+
+input[type="checkbox"].toggle:not(:checked) + label::after {
+  content: attr(date-unchecked);
+  right: 25px;
+  left: auto;
+  opacity: 1;
+  color: white;
+}
+
+input[type="checkbox"].toggle:not(:checked) + label::before {
+  left: 4px;
+  background-color: white;
+}
+
+input[type="checkbox"].toggle:checked + label {
+  text-align: left;
+  background-color: #55689d;
+}
+
+input[type="checkbox"].toggle:checked + label::after {
+  content: attr(data-checked);
+  left: 34px;
+  right: auto;
+  opacity: 1;
+  color: white;
+}
+
+input[type="checkbox"].toggle:checked + label::before {
+  left: 179px;
+  background-color: white;
+}
+
+label span::before {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #55689d;
+  z-index: 20;
+  transition: all 0.3s ease;
+}
+
+label span::after {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ef7a7f;
+  z-index: 20;
+  transition: all 0.3s ease;
+}
+
+input[type="checkbox"].toggle:checked + label span::before {
+  content: attr(data-checked);
+  left: 209px;
+}
+
+input[type="checkbox"].toggle:not(:checked) + label span::after {
+  content: attr(data-unchecked);
+}
+
+.OFF_TEXT {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.OFF_TEXT h2 {
+  font-size: 22px;
+}
+
+.OFF_TEXT p {
+  font-size: 18px;
+}
+
+.ON_TEXT {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.ON_TEXT h2 {
+  font-size: 22px;
+}
+
+.ON_TEXT p {
+  font-size: 18px;
+}
+
+input[type="checkbox"]:checked + label .OFF_TEXT {
+  display: none;
+}
+
+input[type="checkbox"]:not(:checked) + label .ON_TEXT {
+  display: none;
+}

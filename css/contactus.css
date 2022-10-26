@@ -190,3 +190,9 @@ form button {
     height: 210%;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .contact_container {
+    height: 110%;
+  }
+}

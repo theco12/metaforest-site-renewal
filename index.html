@@ -73,12 +73,15 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
+            <p>처음 만나는 <b>메타버스 심리상담 플랫폼</b></p>
             <img src="./image/banner/banner1.png" alt="" />
           </div>
           <div class="swiper-slide">
+            <p>처음 만나는 <b>메타버스 심리상담 플랫폼</b></p>
             <img src="./image/banner/banner2.png" alt="" />
           </div>
           <div class="swiper-slide">
+            <p>처음 만나는 <b>메타버스 심리상담 플랫폼</b></p>
             <img src="./image/banner/banner3.png" alt="" />
           </div>
         </div>
@@ -89,13 +92,14 @@
           <div class="overlay"></div>
           <div class="content">
             <div class="close-btn" onclick="togglePopup()">&times;</div>
+
             <iframe
               width="854px"
               height="480px"
               src="https://www.youtube.com/embed/NEePHXsvatQ"
               title="메타포레스트 소개영상"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; autoplay;  encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
           </div>
@@ -128,8 +132,8 @@
           <div class="icon_image">
             <img
               src="./image/icon/icon1.png"
-              width="220px"
-              height="200px"
+              width="280px"
+              height="280px"
               alt="1"
             />
             <h2>
@@ -144,8 +148,8 @@
           <div class="icon_image">
             <img
               src="./image/icon/icon2.png"
-              width="235px"
-              height="200px"
+              width="280px"
+              height="280px"
               alt="1"
             />
             <h2>검증된 심리검사지</h2>
@@ -156,8 +160,8 @@
           <div class="icon_image">
             <img
               src="./image/icon/icon3.png"
-              width="200px"
-              height="200px"
+              width="280px"
+              height="280px"
               alt="1"
             />
             <h2>메타버스 심리상담 전문 인력</h2>
@@ -182,8 +186,8 @@
           <div class="icon_image">
             <img
               src="./image/icon/icon4.png"
-              width="200px"
-              height="200px"
+              width="280px"
+              height="280px"
               alt="1"
             />
             <h2>실시간 모션트레킹</h2>
@@ -192,8 +196,8 @@
           <div class="icon_image">
             <img
               src="./image/icon/icon5.png"
-              width="225px"
-              height="200px"
+              width="280px"
+              height="280px"
               alt="1"
             />
             <h2>검증된 심리검사지</h2>
@@ -202,8 +206,8 @@
           <div class="icon_image">
             <img
               src="./image/icon/icon6.png"
-              width="200px"
-              height="200px"
+              width="280px"
+              height="280px"
               alt="1"
             />
             <h2>메타버스 심리상담 전문 인력</h2>
@@ -213,13 +217,17 @@
       </div>
       <div class="cert_check">
         <div class="cert_inner">
-          <div class="check1" onclick="cert_Popup()">
-            <img src="./image/plus-btn.png" alt="plus" />
-            <p>특허출원 및 MOU 현황</p>
+          <div class="cert_btn">
+            <div class="check1" onclick="cert_Popup()">
+              <img src="./image/plus-btn.png" alt="plus" />
+              <p>특허출원 및 MOU 현황</p>
+            </div>
           </div>
-          <div class="check2">
-            <p>기업 증명서 확인</p>
-            <img src="./image/plus-btn.png" alt="plus" />
+          <div class="cert_btn">
+            <div class="check2">
+              <img src="./image/plus-btn.png" alt="plus" />
+              <p>기업 증명서 확인</p>
+            </div>
           </div>
         </div>
         <p class="cert_text">
@@ -238,26 +246,36 @@
             ><br />원하는대로 소통할 자유를 만끽하세요
           </p>
         </div>
-        <div class="section4_icon">
-          <div class="icon_image">
-            <img
-              src="./image/newblue_main_sample01.png"
-              width="160px"
-              height="160px"
-              alt="1"
-            />
-            <h2>실시간 모션트레킹</h2>
-            <p>웹캠으로 전신 모션트래킹 구현 기술 보유</p>
-          </div>
-          <div class="icon_image">
-            <img
-              src="./image/newblue_main_sample01.png"
-              width="160px"
-              height="160px"
-              alt="1"
-            />
-            <h2>검증된 심리검사지</h2>
-            <p>심리상담 전문가의 검증을 거쳐 신뢰할 수 있는 심리검사지 사용</p>
+        <div class="btn_container">
+          <div>
+            <input type="checkbox" class="toggle" id="default" />
+            <label
+              for="default"
+              data-checked="내 얼굴 공개"
+              date-unchecked="내 얼굴 비공개"
+              ><span data-checked="ON" data-unchecked="OFF"></span>
+              <div class="OFF_TEXT">
+                <h2>
+                  상대방에게 내 얼굴이 공개되지 않고 실시간 표정인식 아바타로
+                  소통해요
+                </h2>
+                <p>
+                  만약 상대방이 얼굴을 공개해도 내 얼굴이 비공개라면 내 얼굴은
+                  공개되지 않습니다.
+                </p>
+              </div>
+
+              <div class="ON_TEXT">
+                <h2>
+                  상대방에게 자신의 얼굴을 드러내고 싶다면 스스로 선택해서
+                  오픈할 수 있어요
+                </h2>
+                <p>
+                  만약 상대방이 얼굴을 공개하지 않아도 내 얼굴이 공개라면
+                  상대방은 내 얼굴을 볼 수 있습니다.
+                </p>
+              </div>
+            </label>
           </div>
         </div>
       </div>
@@ -341,18 +359,13 @@
           <span>※ 모바일 버전과 iOS 버전은 출시 준비 중</span>
         </div>
         <div class="section6_icon">
-          <div class="icon_image">
-            <img
-              src="./image/newblue_main_sample01.png"
-              width="160px"
-              height="160px"
-              alt="1"
-            />
-            <div class="section6_btn">
-              <h2 class="btn_text">지금 구독 서비스를 알아보세요!</h2>
-              <button class="btn_info">구독문의</button>
-            </div>
-          </div>
+          <img src="./image/tablet_image/tablet.png" alt="tablet" />
+          <img src="./image/tablet_image/tablet2.png" alt="tablet2" />
+          <img src="./image/tablet_image/tablet3.png" alt="tablet3" />
+        </div>
+        <div class="section6_btn">
+          <h2 class="btn_text">지금 구독 서비스를 알아보세요!</h2>
+          <button class="btn_info"><a href="#s10">구독문의</a></button>
         </div>
       </div>
     </section>
@@ -423,7 +436,7 @@
       </div>
       <div class="section7_inner">
         <h2 class="btn_text pink">지금 구독 서비스를 알아보세요!</h2>
-        <button class="btn_info pink">구독문의</button>
+        <button class="btn_info pink"><a href="#s10">구독문의</a></button>
       </div>
     </section>
 
@@ -432,23 +445,17 @@
       <div class="section_inner">
         <div class="section8_text">
           <h4>
-            EAP도 역사 메타포레스트! <br />기업과 직원의 맞춤 프로그램을
-            제공합니다
+            메타포레스트 EAP 상담으로 <br />기업과 직원의 맞춤 프로그램을
+            만나보세요!
           </h4>
         </div>
         <div class="section8_icon">
-          <div class="section8_inner">
-            <img
-              src="./image/newblue_main_sample01.png"
-              width="160px"
-              height="160px"
-              alt="1"
-            />
-            <div class="section8_btn">
-              <h2 class="btn_text darkblue">지금 구독 서비스를 알아보세요!</h2>
-              <button class="btn_info darkblue">구독문의</button>
-            </div>
-          </div>
+          <img src="./image/EAP/eap1.png" alt="eap1" />
+          <img src="./image/EAP/eap2.png" alt="eap2" />
+        </div>
+        <div class="section8_btn">
+          <h2 class="btn_text blue">지금 EAP 서비스를 알아보세요!</h2>
+          <button class="btn_info blue"><a href="#s10">EAP 문의</a></button>
         </div>
       </div>
     </section>
@@ -610,7 +617,7 @@
               <h2 class="btn_text">
                 교육 | 컨설팅 | 시연 <br />지금 상담 받아보세요!
               </h2>
-              <button class="btn_info">교육문의</button>
+              <button class="btn_info"><a href="#s10">교육문의</a></button>
             </div>
           </div>
         </div>
@@ -994,7 +1001,7 @@
               <div class="footer_icon"></div>
             </div>
             <ul class="footer_content" style="padding-left: 0px">
-              <li>대표 | 조은상, 이성찬</li>
+              <li>대표 | 이성찬, 조은상</li>
               <li>주소 | 서울특별시 성동구 뚝섬로17가길 48</li>
               <li>사업자등록번호 | 750-88-01121</li>
             </ul>
@@ -1057,32 +1064,68 @@
             <li>
               <img src="./image/certification/certification13.png" alt="" />
             </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 특허 및 MOU/ -->
+    <section id="popup_cert" class="popup_cert">
+      <div id="cert_slide_content" class="cert_slide_content">
+        <div class="controls">
+          <span class="next_slide"
+            ><i class="fa-solid fa-caret-right"></i
+          ></span>
+          <span class="prev_slide"><i class="fa-solid fa-caret-left"></i></span>
+          <span class="cert_close_btn" onclick="cert_close_Popup()">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <div class="slide_wrapper">
+          <ul class="slides">
             <li>
-              <img src="./image/certification/certification14.png" alt="" />
+              <img src="./image/certification/certification1.jpg" alt="" />
             </li>
             <li>
-              <img src="./image/certification/certification15.png" alt="" />
+              <img src="./image/certification/certification2.png" alt="" />
             </li>
             <li>
-              <img src="./image/certification/certification16.png" alt="" />
+              <img src="./image/certification/certification3.jpg" alt="" />
             </li>
             <li>
-              <img src="./image/certification/certification17.png" alt="" />
+              <img src="./image/certification/certification4.png" alt="" />
             </li>
             <li>
-              <img src="./image/certification/certification18.png" alt="" />
+              <img src="./image/certification/certification5.jpg" alt="" />
             </li>
             <li>
-              <img src="./image/certification/certification19.png" alt="" />
+              <img src="./image/certification/certification6.jpg" alt="" />
             </li>
             <li>
-              <img src="./image/certification/certification20.png" alt="" />
+              <img src="./image/certification/certification7.jpg" alt="" />
+            </li>
+            <li>
+              <img src="./image/certification/certification8.jpg" alt="" />
+            </li>
+            <li>
+              <img src="./image/certification/certification9.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/certification/certification10.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/certification/certification11.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/certification/certification12.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/certification/certification13.png" alt="" />
             </li>
           </ul>
         </div>
       </div>
     </section>
-    <button class="cert_button" onclick="cert_Popup()">인증서보기</button>
 
     <!-- JavaScript -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

@@ -7,12 +7,17 @@ toggle.addEventListener("click", () => {
 
 // <!-- Initialize Swiper -->
 
-var swiper = new Swiper(".mySwiper", {});
+var swiper = new Swiper(".mySwiper", {
+  autoplay: {
+    delay: 3000,
+  },
+});
 
 function togglePopup() {
   document.getElementById("popup-1").classList.toggle("active");
 }
 
+// Flickity slide
 var elem = document.querySelector(".grid-slider-wrap");
 var flkty = new Flickity(elem, {
   // options
