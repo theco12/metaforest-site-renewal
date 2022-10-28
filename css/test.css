@@ -159,3 +159,20 @@ input[type="checkbox"]:checked + label .OFF_TEXT {
 input[type="checkbox"]:not(:checked) + label .ON_TEXT {
   display: none;
 }
+
+.scroll {
+  display: block;
+}
+
+@keyframes arrow1 {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 100px;
+  }
+}
+
+.arrow1 {
+  animation: arrow1 1s linear infinite alternate;
+}

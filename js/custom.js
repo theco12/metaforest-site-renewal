@@ -15,6 +15,7 @@ var swiper = new Swiper(".mySwiper", {
 
 function togglePopup() {
   document.getElementById("popup-1").classList.toggle("active");
+  document.getElementById("player").src += "";
 }
 
 // Flickity slide
