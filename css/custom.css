@@ -1189,3 +1189,109 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
     height: 380px;
   }
 }
+
+/* certification slide */
+
+.cert_slide_content2 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translate(0, -50%) scale(0.1);
+  transition: transform 0.1s, top 0.1s;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.cert_slide_content_open2 {
+  visibility: visible;
+  top: 50%;
+  transform: translate(0, -50%) scale(1);
+}
+
+.slide_wrapper2 {
+  position: relative;
+  width: 1440px;
+  height: 510px;
+  margin: 0 auto;
+  overflow: hidden;
+  top: 200px;
+}
+
+.slides2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: left 0.5s ease-out;
+}
+
+.slides2 img {
+  float: left;
+  margin-right: 30px;
+  width: 300px;
+  height: 410px;
+}
+
+.slides2 li:not(:last-child) {
+  float: left;
+  margin-right: 30px;
+}
+
+.controls2 {
+  text-align: center;
+}
+
+.controls2 span {
+  position: absolute;
+  font-size: 70px;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+
+.controls2 .prev_slide2 {
+  position: absolute;
+  top: 360px;
+  left: 130px;
+}
+
+.controls2 .next_slide2 {
+  position: absolute;
+  top: 360px;
+  right: 130px;
+}
+
+.controls2 .cert_close_btn2 {
+  position: absolute;
+  right: 240px;
+  top: 110px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .slide_wrapper2 {
+    width: 320px;
+    top: 130px;
+  }
+
+  .controls2 .prev_slide2 {
+    top: 290px;
+    left: 13px;
+  }
+  .controls2 .next_slide2 {
+    top: 290px;
+    right: 13px;
+  }
+
+  .controls2 .cert_close_btn2 {
+    right: 60px;
+    top: 50px;
+  }
+
+  .slides2 img {
+    width: 270px;
+    height: 380px;
+  }
+}

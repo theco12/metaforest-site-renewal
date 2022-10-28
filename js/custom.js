@@ -38,7 +38,7 @@ var flkty = new Flickity(elem, {
   pageDots: false,
 });
 
-// certification slide
+// 기업증명서 slider
 var slides = document.querySelector(".slides"),
   slide = document.querySelectorAll(".slides li"),
   currentIdx = 0;
@@ -57,7 +57,7 @@ function moveSlide(num) {
 }
 
 nextBtn.addEventListener("click", function () {
-  if (currentIdx < slideCount - 8) {
+  if (currentIdx < slideCount - 4) {
     moveSlide(currentIdx + 1);
   } else {
     moveSlide(0);
@@ -68,7 +68,7 @@ prevBtn.addEventListener("click", function () {
   if (currentIdx > 0) {
     moveSlide(currentIdx - 1);
   } else {
-    moveSlide(slideCount - 10);
+    moveSlide(slideCount - 4);
   }
 });
 
@@ -80,4 +80,48 @@ function cert_Popup() {
 
 function cert_close_Popup() {
   popup_cert1.classList.remove("cert_slide_content_open");
+}
+
+// 특허 및 MOU slider
+var slides2 = document.querySelector(".slides2"),
+  slide2 = document.querySelectorAll(".slides2 li"),
+  currentIdx2 = 0;
+(slideCount2 = slide2.length),
+  (slidewidth2 = 400),
+  (slideMargin2 = 40),
+  (nextBtn2 = document.querySelector(".next_slide2")),
+  (prevBtn2 = document.querySelector(".prev_slide2"));
+
+slides2.style.width =
+  (slidewidth2 + slideMargin2) * slideCount2 - slideMargin2 + "px";
+
+function moveSlide2(num) {
+  slides2.style.left = -num * 440 + "px";
+  currentIdx2 = num;
+}
+
+nextBtn2.addEventListener("click", function () {
+  if (currentIdx2 < slideCount2 - 5) {
+    moveSlide2(currentIdx2 + 1);
+  } else {
+    moveSlide2(0);
+  }
+});
+
+prevBtn2.addEventListener("click", function () {
+  if (currentIdx2 > 0) {
+    moveSlide2(currentIdx2 - 1);
+  } else {
+    moveSlide2(slideCount2 - 5);
+  }
+});
+
+let popup_cert2 = document.getElementById("cert_slide_content2");
+
+function cert_Popup2() {
+  popup_cert2.classList.add("cert_slide_content_open2");
+}
+
+function cert_close_Popup2() {
+  popup_cert2.classList.remove("cert_slide_content_open2");
 }
