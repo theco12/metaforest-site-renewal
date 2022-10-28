@@ -121,6 +121,35 @@ body {
   margin: 8px 10px;
 }
 
+/* scroll */
+.scrolling {
+  z-index: 200;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  bottom: 30px;
+}
+.scrolling img {
+  display: block;
+  width: 1.1%;
+  margin: 0 auto;
+  padding: 4px 0;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(40%);
+  }
+}
+
+.arrow11 {
+  animation: down 0.5s linear infinite alternate;
+}
+
 /* popup */
 .popup .overlay {
   position: fixed;
@@ -143,7 +172,6 @@ body {
 }
 
 .popup .content iframe {
- 
 }
 
 .popup .close-btn {
@@ -640,9 +668,24 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
   display: none;
 }
 
+.background_char .char1 {
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+}
+
+.background_char .char2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 @media screen and (max-width: 768px) {
   .section4_icon {
     display: block;
+  }
+  .background_char {
+    display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 1500px) {
