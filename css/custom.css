@@ -234,6 +234,7 @@ body {
   }
 
   .main_banner {
+    top: 0;
     height: 720px;
   }
 
@@ -253,6 +254,10 @@ body {
   .popup .content iframe {
     width: 450px;
     height: 260px;
+  }
+
+  .scrolling img {
+    width: 5%;
   }
 }
 
@@ -1059,6 +1064,10 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 .section9_text {
   margin: 0 auto;
   text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
 }
 
 .section9_text h4 {
@@ -1081,7 +1090,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
   position: absolute;
   right: 0;
   left: 0;
-  top: 550px;
+  top: 600px;
 }
 
 .partner {
@@ -1090,7 +1099,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
   right: 0;
   margin: 0 auto;
   max-width: 880px;
-  top: 158px;
+  top: 178px;
 }
 
 .partner_logo {
@@ -1159,6 +1168,8 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
   margin: 0 auto;
   text-align: center;
   color: white;
+  position: relative;
+  top: 80px;
 }
 .method_container {
   max-width: 1250px;
