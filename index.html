@@ -91,8 +91,9 @@
         <div class="popup" id="popup-1">
           <div class="overlay"></div>
           <div class="content">
-            <div class="close-btn" onclick="togglePopup()">&times;</div>
-
+            <div class="close-btn" id="close-btn" onclick="closeBtn()">
+              &times;
+            </div>
             <iframe
               id="player"
               width="854px"
@@ -108,7 +109,7 @@
       </div>
       <div class="main_button">
         <a href="#s3"
-          ><button type="submit" class="viedo" onclick="togglePopup()">
+          ><button type="submit" class="video" onclick="togglePopup()">
             <img src="./image/arrow.png" alt="삼각형" /> 소개영상보기
           </button></a
         >
@@ -130,7 +131,7 @@
           <p>
             <span style="font-weight: 800"
               >메타포레스트는 멘탈 헬스, 심리상담 전문가</span
-            >가<br />철저한 검증을 거쳐 만들고 있습니다
+            >가<br />철저한 검증을 거쳐 만들고 있습니다.
           </p>
         </div>
         <div class="section2_icon">
@@ -157,7 +158,7 @@
               height="280px"
               alt="1"
             />
-            <h2>검증된 심리검사지</h2>
+            <h2>전문가를 통해 검증된<br />심리검사지</h2>
             <p>
               심리상담 전문가의 검증을 거쳐 <br />신뢰할 수 있는 심리검사지 사용
             </p>
@@ -169,7 +170,7 @@
               height="280px"
               alt="1"
             />
-            <h2>메타버스 심리상담 전문 인력</h2>
+            <h2>메타버스 심리상담 <br />전문 인력</h2>
             <p>심리상담 전문가로 구성된 전담팀 보유</p>
           </div>
         </div>
@@ -180,11 +181,10 @@
     <section class="section3_container" id="s3">
       <div class="section_inner">
         <div class="section3_text">
-          <h4>어떻게 메타버스에서도 <br />검증된 심리상담이 가능할까요?</h4>
+          <h4>메타포레스트의 <br />메타버스 심리상담은 무엇이 다를까요?</h4>
           <p>
-            <span style="font-weight: 800"
-              >메타포레스트는 멘탈 헬스, 심리상담 전문가</span
-            >가<br />철저한 검증을 거쳐 만들고 있습니다
+            <b>메타포레스트는 자사의 검증된 기술력</b>으로 <br />메타버스
+            심리상담 플랫폼의 기준을 만듭니다.
           </p>
         </div>
         <div class="section3_icon">
@@ -195,8 +195,8 @@
               height="280px"
               alt="1"
             />
-            <h2>실시간 모션트레킹</h2>
-            <p>웹캠으로 전신 모션트래킹 구현 기술 보유</p>
+            <h2>실시간 얼굴 및 표정 트래킹</h2>
+            <p>웹캠으로 얼굴 및 표정 트래킹 구현 기술 보유</p>
           </div>
           <div class="icon_image">
             <img
@@ -205,8 +205,8 @@
               height="280px"
               alt="1"
             />
-            <h2>검증된 심리검사지</h2>
-            <p>심리상담 전문가의 검증을 거쳐 신뢰할 수 있는 심리검사지 사용</p>
+            <h2>메타버스 내 표정 및 음성 데이터 분석</h2>
+            <p>보이스 필터 음성변조 기술 <br />내담자 신원 보호 기술 보유</p>
           </div>
           <div class="icon_image">
             <img
@@ -215,8 +215,8 @@
               height="280px"
               alt="1"
             />
-            <h2>메타버스 심리상담 전문 인력</h2>
-            <p>심리상담 전문가로 구성된 전담팀 보유</p>
+            <h2>메타버스 개발 전문 인력</h2>
+            <p>기술 전담팀 보유</p>
           </div>
         </div>
       </div>
@@ -251,8 +251,9 @@
         <div class="section4_text">
           <h4>원하는 페이스 모드로 <br />자유로운 심리상담을 경험해보세요!</h4>
           <p>
-            <span style="font-weight: 800">얼굴 공개 No! 얼굴 공개 Yes! </span
-            ><br />원하는대로 소통할 자유를 만끽하세요
+            <b
+              >얼굴을 드러내고 싶지 않다면 off<br />얼굴을 드러내고 싶다면 on</b
+            >
           </p>
         </div>
         <div class="btn_container">
@@ -361,9 +362,9 @@
         <div class="section6_text">
           <h4>PC, 모바일, 태블릿 <br />어디서나 편하게 심리상담하세요!</h4>
           <p>
-            상담센터에 방문하는 시간과 부담 ZERO!
+            쉽게 접속할 수 있는 메타버스 상담실 덕분에
             <br />
-            접근성을 높여 더 편리합니다
+            상담센터에 직접 방문해야 하는 부담이 없습니다.
           </p>
           <span>※ 모바일 버전과 iOS 버전은 출시 준비 중</span>
         </div>
@@ -387,8 +388,10 @@
           나만의 공간이 필요하시다면 <br />상담공간 구축 서비스를 알아보세요!
         </h4>
         <p>
-          <span style="font-weight: 800">기관/단체/학교을 위한 </span
-          ><br />상담실부터 공간까지 맞춤 구축
+          <b>
+            상담실부터 외부 공간까지 맞춤 구축이 가능해
+            <br />기관/단체/학교에서도 필요에 맞게 활용할 수 있습니다.</b
+          >
         </p>
       </div>
       <div class="grid-slider-wrap2">
@@ -444,8 +447,8 @@
         </div>
       </div>
       <div class="section7_inner">
-        <h2 class="btn_text pink">지금 구독 서비스를 알아보세요!</h2>
-        <button class="btn_info pink"><a href="#s10">구독문의</a></button>
+        <h2 class="btn_text pink">지금 구축 서비스를 알아보세요!</h2>
+        <button class="btn_info pink"><a href="#s10">구축문의</a></button>
       </div>
     </section>
 
@@ -454,8 +457,8 @@
       <div class="section_inner">
         <div class="section8_text">
           <h4>
-            메타포레스트 EAP 상담으로 <br />기업과 직원의 맞춤 프로그램을
-            만나보세요!
+            비대면 업무가 익숙한 요즘,<br />EAP 상담에 최적화된 서비스를
+            제공합니다!
           </h4>
         </div>
         <div class="section8_icon">
@@ -512,53 +515,49 @@
                 <img src="./image/Partner/partner10.png" alt="한국교원대" />
               </div>
               <div class="partner_logo">
-                <img src="./image/Partner/partner11.png" alt="안산대" />
+                <img src="./image/Partner/partner11.png" alt="서울교대" />
               </div>
               <div class="partner_logo">
-                <img src="./image/Partner/partner12.png" alt="DSC" />
+                <img src="./image/Partner/partner12.png" alt="안산대" />
               </div>
               <div class="partner_logo">
-                <img src="./image/Partner/partner13.png" alt="세은심리상담소" />
+                <img src="./image/Partner/partner13.png" alt="DSC" />
               </div>
               <div class="partner_logo">
-                <img src="./image/Partner/partner14.png" alt="밝음" />
+                <img src="./image/Partner/partner14.png" alt="세은심리상담소" />
               </div>
               <div class="partner_logo">
-                <img src="./image/Partner/partner15.png" alt="마음" />
+                <img src="./image/Partner/partner15.png" alt="맑음" />
               </div>
               <div class="partner_logo">
-                <img src="./image/Partner/partner16.png" alt="아하심리상담소" />
+                <img src="./image/Partner/partner16.png" alt="마음" />
               </div>
               <div class="partner_logo">
-                <img src="./image/Partner/partner17.png" alt="deepvisions" />
+                <img src="./image/Partner/partner17.png" alt="아하" />
               </div>
               <div class="partner_logo">
-                <img src="./image/Partner/partner18.png" alt="수돗물" />
-              </div>
-
-              <div class="partner_logo">
-                <img src="./image/Partner/partner20.png" alt="부산" />
+                <img src="./image/Partner/partner18.png" alt="부산" />
               </div>
               <div class="partner_logo">
-                <img src="./image/Partner/partner21.png" alt="대전" />
+                <img src="./image/Partner/partner19.png" alt="대전청소년" />
               </div>
               <div class="partner_logo">
-                <img
-                  src="./image/Partner/partner22.png"
-                  alt="대전 상담쪽지센터"
-                />
+                <img src="./image/Partner/partner20.png" alt="대전2" />
               </div>
               <div class="partner_logo">
-                <img src="./image/Partner/partner23.png" alt="창동" />
+                <img src="./image/Partner/partner21.png" alt="포항" />
               </div>
               <div class="partner_logo">
-                <img src="./image/Partner/partner24.png" alt="유성구" />
+                <img src="./image/Partner/partner22.png" alt="창동" />
               </div>
               <div class="partner_logo">
-                <img src="./image/Partner/partner25.png" alt="서울대" />
+                <img src="./image/Partner/partner23.png" alt="유성구" />
               </div>
               <div class="partner_logo">
-                <img src="./image/Partner/partner26.png" alt="경북포항" />
+                <img src="./image/Partner/partner24.png" alt="deepvision" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner25.png" alt="수돗물" />
               </div>
             </div>
             <div class="section9_btn">
@@ -584,7 +583,7 @@
             <img src="./image/line.png" alt="line" />
             <p>메타포레스트 사이트에서 문의를 남겨주세요.</p>
             <img src="./image/line2.png" alt="line" />
-            <button class="btn_info"><a href="#s10">문의하기</a></button>
+            <a href="#s10"><button class="btn_info">문의하기</button></a>
           </div>
           <div class="method_context">
             <h4>STEP2</h4>
@@ -989,7 +988,24 @@
           <div class="footer_text">
             <div class="footer_title">
               <h3>(주) 야타브엔터</h3>
-              <div class="footer_icon"></div>
+              <div class="footer_icon">
+                <a
+                  href="https://www.youtube.com/channel/UCJwE7_5kQvl6hoDKWuZNDiQ"
+                  target="_blank"
+                  ><img
+                    src="./image/youtube_icon.png"
+                    onmouseover="this.src='./image/youtube_logo_hover.png'"
+                    onmouseout="this.src='./image/youtube_icon.png'"
+                    alt="youtube"
+                /></a>
+                <a href="https://blog.naver.com/yatav_official" target="_blank"
+                  ><img
+                    src="./image/blog_icon.png"
+                    onmouseover="this.src='./image/blog_icon_hover.png'"
+                    onmouseout="this.src='./image/blog_icon.png'"
+                    alt="blog"
+                /></a>
+              </div>
             </div>
             <ul class="footer_content" style="padding-left: 0px">
               <li>대표 | 이성찬, 조은상</li>

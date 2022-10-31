@@ -114,7 +114,7 @@ body {
   left: 0;
   right: 0;
   text-align: center;
-  z-index: 30;
+  z-index: 20;
 }
 
 .main_button button {
@@ -123,7 +123,7 @@ body {
 
 /* scroll */
 .scrolling {
-  z-index: 80;
+  z-index: 20;
   position: absolute;
   right: 0;
   left: 0;
@@ -171,7 +171,9 @@ body {
   box-sizing: border-box;
 }
 
-.popup .content iframe {
+.popup .content {
+  display: none;
+  -webkit-user-drag: none;
 }
 
 .popup .close-btn {
@@ -188,11 +190,12 @@ body {
 }
 
 .popup.active .content {
+  display: block;
   transition: all 300ms ease-in-out;
   transform: translate(-50%, -50%) scale(1);
 }
 
-.viedo {
+.video {
   border-radius: 50px;
   background-color: #2e2e2e;
   padding: 10px 20px;
@@ -307,7 +310,12 @@ body {
 
 @media screen and (max-width: 768px) {
   .section2_container {
-    height: 165%;
+    height: 185%;
+  }
+
+  .section3_text h4 {
+    max-width: 330px;
+    margin: 0 auto;
   }
 
   .section2_icon {
@@ -325,7 +333,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1500px) {
   .section2_container {
-    height: 105%;
+    height: 110%;
   }
 }
 
@@ -373,11 +381,9 @@ body {
 }
 
 .section3_icon .icon_image img {
+  position: relative;
+  right: 10px;
   margin-bottom: 15px;
-}
-
-.section3_icon .icon_image:nth-child(2) {
-  padding-right: 50px;
 }
 
 .section3_icon .icon_image h2 {
@@ -391,7 +397,7 @@ body {
 .cert_check {
   width: 100%;
   position: absolute;
-  bottom: 90px;
+  bottom: 60px;
   cursor: pointer;
 }
 
@@ -451,7 +457,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .section3_container {
-    height: 205%;
+    height: 195%;
   }
 
   .section3_icon {
@@ -474,7 +480,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1500px) {
   .section3_container {
-    height: 115%;
+    height: 125%;
   }
 }
 
@@ -681,6 +687,10 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 }
 
 @media screen and (max-width: 768px) {
+  .section4_container {
+    height: 85%;
+  }
+
   .section4_icon {
     display: block;
   }
@@ -690,7 +700,10 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 }
 @media (min-width: 768px) and (max-width: 1500px) {
   .section4_container {
-    height: 70%;
+    height: 75%;
+  }
+  .background_char .char2 {
+    right: -70px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -752,7 +765,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 
 @media (max-width: 575px) {
   .gride-slide {
-    width: 78%;
+    width: 92%;
   }
 }
 
@@ -803,6 +816,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 
 .section6_icon img {
   text-align: center;
+
   padding: 10px 15px;
 }
 
@@ -843,7 +857,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
   }
   .section6_btn {
     position: relative;
-    top: 71px;
+    top: 20px;
   }
 }
 
@@ -908,7 +922,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 
 @media (max-width: 575px) {
   .gride-slide2 {
-    width: 78%;
+    width: 91%;
   }
 }
 
@@ -931,7 +945,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 /* section8 */
 .section8_container {
   width: 100%;
-  height: 65%;
+  height: 95%;
   background-color: #b4e2de;
   position: relative;
 }
@@ -956,7 +970,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 }
 
 .section8_icon {
-  margin-top: 50px;
+  margin-top: 90px;
   text-align: center;
 }
 
@@ -997,7 +1011,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 
 @media screen and (max-width: 768px) {
   .section8_container {
-    height: 840px;
+    height: 870px;
   }
 
   .section8_icon {
@@ -1008,7 +1022,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 @media screen and (min-width: 768px) and (max-width: 1500px) {
   .section8_btn {
     position: relative;
-    top: 71px;
+    top: 40px;
   }
 }
 
@@ -1061,7 +1075,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
   right: 0;
   margin: 0 auto;
   max-width: 880px;
-  top: 208px;
+  top: 158px;
 }
 
 .partner_logo {
@@ -1079,7 +1093,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 @media screen and (max-width: 768px) {
   .section9_container {
     width: 100%;
-    height: 115%;
+    height: 155%;
     background-color: #fff;
     position: relative;
   }
@@ -1090,8 +1104,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
     right: 0;
     margin: 0 auto;
     max-width: 380px;
-    padding-left: 20px;
-    top: 208px;
+    top: 140px;
   }
 
   .partner_logo {
@@ -1105,17 +1118,20 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
     width: 103px;
     height: 32px;
   }
+  .section9_btn {
+    top: 735px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1500px) {
   .section9_container {
-    height: 115%;
+    height: 105%;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1930px) {
   .section9_container {
-    height: 100%;
+    height: 60%;
   }
 }
 
@@ -1176,6 +1192,33 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 @media screen and (max-width: 768px) {
   .method2 {
     display: block;
+  }
+
+  .method_background {
+    height: 150%;
+  }
+
+  .method_context {
+    padding: 20px 0;
+  }
+  .method1 h2 {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .method3 h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -230px;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1500px) {
+  .method_background {
+    height: 100%;
   }
 }
 

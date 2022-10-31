@@ -15,11 +15,11 @@ var swiper = new Swiper(".mySwiper", {
 
 function togglePopup() {
   document.getElementById("popup-1").classList.toggle("active");
-  document.getElementById("player").src += "";
 }
 
-function closeBtn(){
-  document.
+function closeBtn() {
+  document.getElementById("popup-1").classList.remove("active");
+  document.getElementById("player").src += "";
 }
 
 // Flickity slide
