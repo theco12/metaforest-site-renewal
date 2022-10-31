@@ -123,7 +123,7 @@ body {
 
 /* scroll */
 .scrolling {
-  z-index: 200;
+  z-index: 80;
   position: absolute;
   right: 0;
   left: 0;
@@ -158,7 +158,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 99;
+  z-index: 30;
   display: none;
 }
 
@@ -167,7 +167,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  z-index: 100;
+  z-index: 40;
   box-sizing: border-box;
 }
 
@@ -1072,6 +1072,8 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 .partner img {
   padding: 8px 24px;
   margin: 5px 0;
+  width: 125px;
+  height: 40px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1100,18 +1102,8 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
   }
 
   .partner_logo img {
-    width: 80px;
-    height: 25px;
-  }
-
-  .partner_logo .long_image1 {
-    width: 120px;
-    height: 25px;
-  }
-  .partner_logo .long_image2 {
-    width: 130px;
-    height: 25px;
-    margin: 5px 24px;
+    width: 103px;
+    height: 32px;
   }
 }
 
@@ -1123,7 +1115,67 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 
 @media screen and (min-width: 1920px) {
   .section9_container {
-    height: 60%;
+    height: 100%;
+  }
+}
+
+/* 사용방법 section */
+
+.method_background {
+  width: 100%;
+  height: 80%;
+  background-color: #55689d;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+.method_container {
+  max-width: 1250px;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+}
+
+.method_context {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.method_context h4 {
+  font-weight: 400;
+}
+
+.method_context p {
+  font-weight: 800;
+}
+
+.method_context button {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 230px;
+  margin: 0 auto;
+}
+
+.method1 h2 {
+  margin-bottom: 70px;
+  font-size: 24px;
+}
+
+.method2 {
+  text-align: center;
+  display: flex;
+}
+
+.method3 h2 {
+  margin-top: 60px;
+  color: #b4e2de;
+}
+
+@media screen and (max-width: 768px) {
+  .method2 {
+    display: block;
   }
 }
 

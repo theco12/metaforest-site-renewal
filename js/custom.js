@@ -18,6 +18,10 @@ function togglePopup() {
   document.getElementById("player").src += "";
 }
 
+function closeBtn(){
+  document.
+}
+
 // Flickity slide
 var elem = document.querySelector(".grid-slider-wrap");
 var flkty = new Flickity(elem, {
