@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MQP2VVL");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta
+      name="facebook-domain-verification"
+      content="ww5k8vto0wx38toeedmzhyj91xswe9"
+    />
+    <meta
+      name="naver-site-verification"
+      content="76c0f04eeeaad955e89c34fc50f9ecca8cf0eccb"
+    />
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.metaforest.kr" />
+    <meta property="og:title" content="메타포레스트" />
+    <meta property="og:description" content="메타버스 심리상담 플랫폼" />
+    <meta property="og:image" content="img/kakao_logo_deveroad.png" />
+    <!--[if IE
+      ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    /><![endif]-->
+
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="메타버스 심리상담 플랫폼" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>metaforest-renewal</title>
+
+    <!-- FONT -->
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/contactus.css" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- JS -->
+    <script src="/js/custom.js" defer></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <nav class="nav__container">
+      <div class="inner">
+        <div class="nav__logo">
+          <a href="/" class="logo">
+            <img src="./image/logo.png" alt="metaforest-logo" width="170px" />
+          </a>
+        </div>
+
+        <ul class="nav__menu">
+          <li><a href="#s2" class="menu">서비스 소개</a></li>
+          <li><a href="#s11" class="menu">이용 가이드</a></li>
+          <li><a href="#" class="menu">공지사항</a></li>
+          <li><a href="#s10" class="menu">문의하기</a></li>
+          <li><a onclick="onClickLogout()" class="btn_login">로그아웃</a></li>
+          <li>
+            <a href="https://works.do/5j6rGoK" class="btn_FAQ">다운로드</a>
+          </li>
+        </ul>
+
+        <a class="toggle">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+
+    <!-- section_main -->
+    <section class="main_banner">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p>처음 만나는 <b>메타버스 심리상담 플랫폼</b></p>
+            <img src="./image/banner/banner1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <p>처음 만나는 <b>메타버스 심리상담 플랫폼</b></p>
+            <img src="./image/banner/banner2.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <p>처음 만나는 <b>메타버스 심리상담 플랫폼</b></p>
+            <img src="./image/banner/banner3.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="main_inner">
+        <!-- popup -->
+        <div class="popup" id="popup-1">
+          <div class="overlay"></div>
+          <div class="content">
+            <div class="close-btn" id="close-btn" onclick="closeBtn()">
+              &times;
+            </div>
+            <iframe
+              id="player"
+              width="854px"
+              height="480px"
+              src="https://www.youtube.com/embed/NEePHXsvatQ"
+              title="메타포레스트 소개영상"
+              frameborder="0"
+              allow="accelerometer; autoplay;  encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="main_button">
+        <a href="#s3"
+          ><button type="submit" class="video" onclick="togglePopup()">
+            <img src="./image/arrow.png" alt="삼각형" /> 소개영상보기
+          </button></a
+        >
+        <a href="https://works.do/5j6rGoK"
+          ><button class="contact">다운로드</button></a
+        >
+      </div>
+
+      <div class="scrolling">
+        <img src="./image/scroll/Icon1.png" alt="" />
+        <img class="arrow11" src="./image/scroll/Icon2.png" alt="" />
+      </div>
+    </section>
+    <!-- section2 -->
+    <section class="section2_container" id="s2">
+      <div class="section2_inner">
+        <div class="section2_text">
+          <h4>어떻게 메타버스에서도 <br />검증된 심리상담이 가능할까요?</h4>
+          <p>
+            <span style="font-weight: 800"
+              >메타포레스트는 멘탈 헬스, 심리상담 전문가</span
+            >가<br />철저한 검증을 거쳐 만들고 있습니다.
+          </p>
+        </div>
+        <div class="section2_icon">
+          <div class="icon_image">
+            <img
+              src="./image/icon/icon1.png"
+              width="280px"
+              height="280px"
+              alt="1"
+            />
+            <h2>
+              대학과 협약을 통한 공동연구 및<br />
+              메타버스 플랫폼을 활용한 논문 게재
+            </h2>
+            <p>
+              고려대, 계명대, 광운대, 조선대, 호서대 등 협약<br />
+              + 심리상담 2대 메이저 학회 발표 등
+            </p>
+          </div>
+          <div class="icon_image">
+            <img
+              src="./image/icon/icon2.png"
+              width="280px"
+              height="280px"
+              alt="1"
+            />
+            <h2>전문가를 통해 검증된<br />심리검사지</h2>
+            <p>
+              심리상담 전문가의 검증을 거쳐 <br />신뢰할 수 있는 심리검사지 사용
+            </p>
+          </div>
+          <div class="icon_image">
+            <img
+              src="./image/icon/icon3.png"
+              width="280px"
+              height="280px"
+              alt="1"
+            />
+            <h2>메타버스 심리상담 <br />전문 인력</h2>
+            <p>심리상담 전문가로 구성된 전담팀 보유</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section3 -->
+    <section class="section3_container" id="s3">
+      <div class="section_inner">
+        <div class="section3_text">
+          <h4>메타포레스트의 <br />메타버스 심리상담은 무엇이 다를까요?</h4>
+          <p>
+            <b>메타포레스트는 자사의 검증된 기술력</b>으로 <br />메타버스
+            심리상담 플랫폼의 기준을 만듭니다.
+          </p>
+        </div>
+        <div class="section3_icon">
+          <div class="icon_image">
+            <img
+              src="./image/icon/icon4.png"
+              width="280px"
+              height="280px"
+              alt="1"
+            />
+            <h2>실시간 얼굴 및 표정 트래킹</h2>
+            <p>웹캠으로 얼굴 및 표정 트래킹 구현 기술 보유</p>
+          </div>
+          <div class="icon_image">
+            <img
+              src="./image/icon/icon5.png"
+              width="280px"
+              height="280px"
+              alt="1"
+            />
+            <h2>메타버스 내 표정 및 음성 데이터 분석</h2>
+            <p>보이스 필터 음성변조 기술 <br />내담자 신원 보호 기술 보유</p>
+          </div>
+          <div class="icon_image">
+            <img
+              src="./image/icon/icon6.png"
+              width="280px"
+              height="280px"
+              alt="1"
+            />
+            <h2>메타버스 개발 전문 인력</h2>
+            <p>기술 전담팀 보유</p>
+          </div>
+        </div>
+      </div>
+      <div class="cert_check">
+        <div class="cert_inner">
+          <div class="cert_btn">
+            <div class="check1" onclick="cert_Popup2()">
+              <img src="./image/plus-btn.png" alt="plus" />
+              <p>특허출원 및 MOU 현황</p>
+            </div>
+          </div>
+          <div class="cert_btn">
+            <div class="check2" onclick="cert_Popup()">
+              <img src="./image/plus-btn.png" alt="plus" />
+              <p>기업 증명서 확인</p>
+            </div>
+          </div>
+        </div>
+        <p class="cert_text">
+          <b>위에 + 버튼을 누르면 현황 및 인증서 확인이 가능합니다.</b>
+        </p>
+      </div>
+    </section>
+
+    <!-- section4 -->
+    <section class="section4_container">
+      <div class="background_char">
+        <img class="char1" src="./image/char_facemode1.png" alt="" />
+        <img class="char2" src="./image/cahr_facemode2.png" alt="" />
+      </div>
+      <div class="section_inner">
+        <div class="section4_text">
+          <h4>원하는 페이스 모드로 <br />자유로운 심리상담을 경험해보세요!</h4>
+          <p>
+            <b
+              >얼굴을 드러내고 싶지 않다면 off<br />얼굴을 드러내고 싶다면 on</b
+            >
+          </p>
+          <span>아래 OFF/ON버튼을 편하게 눌러보세요!</span>
+        </div>
+        <div class="btn_container">
+          <div>
+            <input type="checkbox" class="toggle" id="default" />
+            <label
+              for="default"
+              data-checked="내 얼굴 공개"
+              date-unchecked="내 얼굴 비공개"
+              ><span data-checked="ON" data-unchecked="OFF"></span>
+              <div class="OFF_TEXT">
+                <h2>
+                  상대방에게 내 얼굴이 공개되지 않고 실시간 표정인식 아바타로
+                  소통해요
+                </h2>
+                <p>
+                  만약 상대방이 얼굴을 공개해도 내 얼굴이 비공개라면 내 얼굴은
+                  공개되지 않습니다.
+                </p>
+              </div>
+
+              <div class="ON_TEXT">
+                <h2>
+                  상대방에게 자신의 얼굴을 드러내고 싶다면 스스로 선택해서
+                  오픈할 수 있어요
+                </h2>
+                <p>
+                  만약 상대방이 얼굴을 공개하지 않아도 내 얼굴이 공개라면
+                  상대방은 내 얼굴을 볼 수 있습니다.
+                </p>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section5 METAFOREST 캐릭터 -->
+    <section class="gride-slider-section">
+      <div class="section5_text">
+        <h4>
+          다양한 아바타로 즐겁게! <br />실시간 표정인식으로 마음을 표현해보세요!
+        </h4>
+        <p>
+          <span style="font-weight: 800">메타포레스트로 접속하실 때 </span
+          ><br />자신의 아바타를 매번 다르게 선택 할 수 있습니다
+        </p>
+      </div>
+      <div class="grid-slider-wrap">
+        <div class="gride-slide">
+          <div class="grid-slide-inner">
+            <img src="./image/character/char1.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide">
+          <div class="grid-slide-inner">
+            <img src="./image/character/char2.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide">
+          <div class="grid-slide-inner">
+            <img src="./image/character/char3.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide">
+          <div class="grid-slide-inner">
+            <img src="./image/character/char4.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide">
+          <div class="grid-slide-inner">
+            <img src="./image/character/char5.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide">
+          <div class="grid-slide-inner">
+            <img src="./image/character/char1.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide">
+          <div class="grid-slide-inner">
+            <img src="./image/character/char2.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide">
+          <div class="grid-slide-inner">
+            <img src="./image/character/char3.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide">
+          <div class="grid-slide-inner">
+            <img src="./image/character/char4.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide">
+          <div class="grid-slide-inner">
+            <img src="./image/character/char5.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section6 -->
+    <section class="section6_container">
+      <div class="section_inner">
+        <div class="section6_text">
+          <h4>PC, 모바일, 태블릿 <br />어디서나 편하게 심리상담하세요!</h4>
+          <p>
+            쉽게 접속할 수 있는 메타버스 상담실 덕분에
+            <br />
+            상담센터에 직접 방문해야 하는 부담이 없습니다.
+          </p>
+          <span>※ 모바일 버전과 iOS 버전은 출시 준비 중</span>
+        </div>
+        <div class="section6_icon">
+          <img src="./image/tablet_image/tablet.png" alt="tablet" />
+          <img src="./image/tablet_image/tablet2.png" alt="tablet2" />
+          <img src="./image/tablet_image/tablet3.png" alt="tablet3" />
+        </div>
+        <div class="section6_btn">
+          <h2 class="btn_text">지금 구독 서비스를 알아보세요!</h2>
+          <button class="btn_info"><a href="#s10">구독문의</a></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section7 METAFOREST 배경 -->
+
+    <section class="gride-slider-section2">
+      <div class="section7_text">
+        <h4>
+          나만의 공간이 필요하시다면 <br />상담공간 구축 서비스를 알아보세요!
+        </h4>
+        <p>
+          <b>
+            상담실부터 외부 공간까지 맞춤 구축이 가능해
+            <br />기관/단체/학교에서도 필요에 맞게 활용할 수 있습니다.</b
+          >
+        </p>
+      </div>
+      <div class="grid-slider-wrap2">
+        <div class="gride-slide2">
+          <div class="grid-slide-inner2">
+            <img src="./image/forest/forest1.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide2">
+          <div class="grid-slide-inner2">
+            <img src="./image/forest/forest2.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide2">
+          <div class="grid-slide-inner2">
+            <img src="./image/forest/forest3.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide2">
+          <div class="grid-slide-inner2">
+            <img src="./image/forest/forest4.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide2">
+          <div class="grid-slide-inner2">
+            <img src="./image/forest/forest5.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide2">
+          <div class="grid-slide-inner2">
+            <img src="./image/forest/forest1.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide2">
+          <div class="grid-slide-inner2">
+            <img src="./image/forest/forest2.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide2">
+          <div class="grid-slide-inner2">
+            <img src="./image/forest/forest3.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide2">
+          <div class="grid-slide-inner2">
+            <img src="./image/forest/forest4.png" alt="" />
+          </div>
+        </div>
+        <div class="gride-slide2">
+          <div class="grid-slide-inner2">
+            <img src="./image/forest/forest5.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="section7_inner">
+        <h2 class="btn_text pink">지금 구축 서비스를 알아보세요!</h2>
+        <button class="btn_info pink"><a href="#s10">구축문의</a></button>
+      </div>
+    </section>
+
+    <!-- section8 -->
+    <section class="section8_container">
+      <div class="section_inner">
+        <div class="section8_text">
+          <h4>
+            비대면 업무가 익숙한 요즘,<br />EAP 상담에 최적화된 서비스를
+            제공합니다!
+          </h4>
+        </div>
+        <div class="section8_icon">
+          <img src="./image/EAP/eap1.png" alt="eap1" />
+          <img src="./image/EAP/eap2.png" alt="eap2" />
+        </div>
+        <div class="section8_btn">
+          <h2 class="btn_text blue">지금 EAP 서비스를 알아보세요!</h2>
+          <button class="btn_info blue"><a href="#s10">EAP 문의</a></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section9 -->
+    <section class="section9_container">
+      <div class="section_inner">
+        <div class="section9_text">
+          <h4>
+            메타포레스트 도입이 고민되실 땐,
+            <br />교육과 컨설팅을 받아보세요!
+          </h4>
+        </div>
+        <div class="section9_icon">
+          <div class="section9_inner">
+            <div class="partner">
+              <div class="partner_logo">
+                <img src="./image/Partner/partner1.png" alt="고려대" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner2.png" alt="한양대" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner3.png" alt="호서대" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner4.png" alt="순천향대" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner5.png" alt="조선대" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner6.png" alt="한동대" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner7.png" alt="울산대" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner8.png" alt="계명대" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner9.png" alt="명지대" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner10.png" alt="한국교원대" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner11.png" alt="서울교대" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner12.png" alt="안산대" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner13.png" alt="DSC" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner14.png" alt="세은심리상담소" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner15.png" alt="맑음" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner16.png" alt="마음" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner17.png" alt="아하" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner18.png" alt="부산" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner19.png" alt="대전청소년" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner20.png" alt="대전2" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner21.png" alt="포항" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner22.png" alt="창동" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner23.png" alt="유성구" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner24.png" alt="deepvision" />
+              </div>
+              <div class="partner_logo">
+                <img src="./image/Partner/partner25.png" alt="수돗물" />
+              </div>
+            </div>
+            <div class="section9_btn">
+              <h2 class="btn_text">
+                교육 | 컨설팅 | 시연 <br />지금 상담 받아보세요!
+              </h2>
+              <button class="btn_info"><a href="#s10">교육문의</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 사용방법 section -->
+    <section class="method_background" id="s11">
+      <div class="method_container">
+        <div class="method1">
+          <h2>메타포레스트 가입과 사용방법이 궁금하신가요?</h2>
+        </div>
+        <div class="method2">
+          <div class="method_context">
+            <h4>STEP1</h4>
+            <img src="./image/line.png" alt="line" />
+            <p>메타포레스트 사이트에서 문의를 남겨주세요.</p>
+            <img src="./image/line2.png" alt="line" />
+            <a href="#s10"><button class="btn_info">문의하기</button></a>
+          </div>
+          <div class="method_context">
+            <h4>STEP2</h4>
+            <img src="./image/line.png" alt="line" />
+            <p>가입를 희망하시면 기관코드를 발급해 드립니다.</p>
+            <img src="./image/line3.png" alt="line" />
+          </div>
+          <div class="method_context">
+            <h4>STEP3</h4>
+            <img src="./image/line.png" alt="line" />
+            <p>
+              메타포레스트 사이트에서 기관코드를 입력하고<br />
+              회원 가입을 진행해주세요.
+            </p>
+            <div>
+              회원가입 후 프로그램을 <br />다운로드 받아 사용하실 수 있습니다.
+            </div>
+            <button class="btn_info pink"><a href="#">회원가입</a></button>
+          </div>
+        </div>
+        <div class="method3">
+          <h2>
+            현재는 학교/기관/업체로 가입이 가능하며<br />
+            일반 고객분들은 메타포레스트를 도입한 기관을 통해<br />
+            상담을 진행하실 수 있습니다.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- section10 -->
+    <section10 id="s10">
+      <div class="contact_container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <div class="title_text">
+            메타버스 심리상담 <br />메타포레스트에 문의하세요
+          </div>
+          <div class="contact_text">
+            <h4 class="explain_info">문의유형</h4>
+            <select id="selection_contact">
+              <option>선택</option>
+              <option>서비스 신규 이용 문의</option>
+              <option>회원 서비스 이용 관련 문의</option>
+              <option>기타</option>
+            </select>
+          </div>
+          <div class="contact_text">
+            <h4 class="explain">소속 기관</h4>
+            <input
+              type="text"
+              id="company"
+              class="contact_box"
+              placeholder="기관/회사명, 개인의 경우 개인으로 기재해주세요"
+              required
+            />
+          </div>
+
+          <div class="contact_text">
+            <h4 class="explain">담당자</h4>
+            <input
+              type="text"
+              id="name"
+              class="contact_box"
+              placeholder="문의하시는 분의 성함을 적어주세요 ex) 홍길동 주임"
+              required
+            />
+          </div>
+          <div class="contact_text">
+            <h4 class="explain">연락처</h4>
+            <input
+              type="text"
+              id="phone"
+              class="contact_box"
+              placeholder="ex)02-000-000"
+              required
+            />
+          </div>
+          <div class="contact_text">
+            <h4 class="explain">이메일</h4>
+            <input
+              type="email"
+              id="email"
+              class="contact_box"
+              placeholder="ex)metaforest@yatavent.com"
+              required
+            />
+          </div>
+          <div class="contact_text">
+            <h4 class="explain">제목</h4>
+            <input
+              type="text"
+              id="title"
+              class="contact_box"
+              placeholder="문의하실 내용의 제목을 입력해주세요"
+              required
+            />
+          </div>
+          <div class="contact_text">
+            <h4 class="explain">내용</h4>
+            <textarea
+              id="message"
+              rows="4"
+              class="contact_box"
+              placeholder="내용을 입력하세요"
+            ></textarea>
+          </div>
+          <div class="agree_container">
+            <div class="terms_box_contact" tabindex="0" id="divService">
+              <div class="article">
+                <p class="article_ct_text">
+                  # 메타포레스트 개인정보 처리방침
+                  <br />
+                  # 개인정보처리방침
+                  <br />
+                  야타브엔터는 사용자의 개인정보 보호를 위해 다음과 같은 방침을
+                  철저히 준수합니다.
+                  <br />
+                  **1.개인정보처리방침의 의의**
+                  <br />
+                  (주)야타브엔터(이하 '야타브엔터' 또는 '회사')는 메타포레스트
+                  서비스(이하 '서비스') 사용자의 개인정보 및 프라이버시를
+                  보호하기 위해 개인정보보호법을 준수합니다. 메타포레스트는
+                  개인정보가 철저히 보호되는 안전한 환경에서 서비스를 이용할 수
+                  있도록 노력합니다. 이를 위해 관계법령이 요구하는
+                  개인정보처리방침의 필수 안내사항을 작성하여 관련 정보를
+                  투명하게 알려드립니다. 사용자가 서비스를 이용할 때 자신의
+                  개인정보에 대해 갖는 권리에 대해 안내하고, 개인정보와 관련된
+                  피해를 예방하고 대처할 수 있도록 개인정보처리방침을
+                  제공합니다.
+                  <br />
+                  **2.처리하는 개인정보**
+                  <br />
+                  야타브엔터는 사회의 윤리와 도덕기준을 존중하고, 사회공익과
+                  상담분야의 발전을 위해 노력하며, 이를 통해 모든 사용자에게 더
+                  적합하고 나은 서비스를 제공하기 위해 필요한 정보를 수집합니다.
+                  <br />
+                  1) 수집하는 개인정보의 항목<br />
+                  ① 서비스 가입 시 아래와 같은 정보가 수집됩니다.<br />
+                  - 회원 : ID(문자,숫자 조합), 비밀번호<br />
+                  - 선택적으로 이메일주소가 수집될 수 있습니다.<br />
+                  ② 서비스 이용과정에서 아래와 같은 정보들이 생성되어 수집될 수
+                  있습니다. <br />
+                  - IP주소, 접속로그, 국가, 쿠키, 서비스 이용 기록, 부정 이용
+                  기록, 결제 기록, PC사양, 기기정보(OS, 모델명, UUID 등의
+                  고유번호)<br />
+                  ③ 연령 확인 및 본인인증이 필요한 서비스 제공 시 아래와 같은
+                  정보가 수집될 수 있습니다. <br />
+                  - 아이핀 본인 인증 시 : 이름, 생년월일, 성별, 내외국인정보,
+                  연계정보(CI)<br />
+                  - 휴대폰 본인 인증 시 : 이름, 생년월일, 성별, 내외국인정보,
+                  연계정보(CI)<br />
+                  - 법정대리인 동의 정보 : 법정대리인의 이름, 이메일 주소,
+                  상기의 본인 인증 정보<br />
+                  ④ 문의 및 신고하기 시 아래와 같은 정보가 수집될 수 있습니다.
+                  <br />
+                  - 이메일 주소, 휴대폰 번호<br />
+                  - 문의/신고 유형에 따라 처리를 위해 PC 사양정보 등 회원이
+                  선택적으로 등록한 정보 추가 수집<br />
+                  ⑤ 유료 결제 시 아래와 같은 결제 정보들이 수집될 수
+                  있습니다.<br />
+                  - 결제 수단(휴대폰, 무통장 입금, 계좌이체, 신용카드,
+                  지류상품권 및 기타 결제수단)에 따라 필요한 개인정보는
+                  수탁업체인 결제대행사가 직접 수집하여 결제처리 및 요금정산
+                  업무를 수행하며, 회사는 결제 기록 수집<br />
+                  - 환불 신청 시 ID, 이름, 연락처, 은행명, 예금주, 계좌번호,
+                  대리인 환불 신청 시 신청인과의 관계를 확인할 수 있는 정보<br />
+                  ⑥ 서비스 이용 과정에서 아래와 같은 정보가 수집될 수
+                  있습니다.<br />
+                  - 메시지 로그 정보, 음성 및 오디오 정보<br />
+                  - 사용자가 동의한 경우에 한해 신상정보를 미포함한 서비스 이용
+                  영상 (해당 정보는 개인정보와의 연계 여부에 따라 개인정보에
+                  해당할 수 있고, 개인정보에 해당하지 않을 수도 있습니다.)<br />
+                  2) 개인정보 수집방법<br />
+                  ① 회원가입 및 서비스 이용 과정에서 이용자가 개인정보 수집에
+                  대해 동의를 하고 직접 정보를 입력하는 경우, 해당 개인정보를
+                  수집합니다.<br />
+                  ② 고객센터를 통한 상담 과정에서 웹페이지, 메일, 팩스, 전화
+                  등을 통해 이용자의 개인정보가 수집될 수 있습니다.<br />
+                  ③ 오프라인에서 진행되는 이벤트, 세미나 등에서 서면을 통해
+                  개인정보가 수집될 수 있습니다.<br />
+                  ④ 야타브엔터와 제휴한 외부 기업이나 단체로부터 개인정보를
+                  제공받을 수 있으며, 이러한 경우에는 개인정보보호법에 따라
+                  제휴사에서 이용자에게 개인정보 제공 동의 등을 받은 후에
+                  야타브엔터에 제공합니다.<br />
+                  ⑤ 기기정보와 같은 생성정보는 PC웹, 모바일 웹/앱 이용 과정에서
+                  자동으로 생성되어 수집될 수 있습니다.<br />
+
+                  <br />
+                  <br />
+                  **3.수집한 개인정보의 이용**
+                  <br />
+                  야타브엔터는 서비스를 통해 다뤄지는 정보의 기록, 보관 및
+                  폐기에 관한 규정을 마련하고 준수합니다. 인간의 존엄성과 가치를
+                  존중하고 서비스를 통해 더 나은 삶을 실현할 수 있도록 돕기 위해
+                  상담과 관련된 윤리규정을 준수하여 개인정보를 다룹니다.
+                  <br />
+                  1) 회원 가입 의사의 확인, 연령 확인 및 법정대리인 동의 진행,
+                  이용자 및 법정대리인의 본인 확인, 이용자 식별, 회원탈퇴 의사의
+                  확인 등 회원관리를 위하여 개인정보를 이용합니다.<br />
+                  2) 인구통계학적 분석, 서비스 방문 및 이용기록의 분석, 신규
+                  서비스 요소의 발굴 및 기존 서비스 개선 등을 위하여 개인정보를
+                  이용합니다.<br />
+                  3) 법령 및 야타브엔터 이용약관을 위반하는 회원에 대한 이용
+                  제한 조치, 부정 이용 행위를 포함하여 서비스의 원활한 운영에
+                  지장을 주는 행위에 대한 방지 및 제재, 계정도용 및 부정거래
+                  방지, 약관 개정 등의 고지사항 전달, 분쟁조정을 위한 기록 보존,
+                  민원처리 등 이용자 보호 및 서비스 운영을 위하여 개인정보를
+                  이용합니다.<br />
+                  4) 유료 서비스 제공에 따르는 본인인증, 구매 및 요금 결제를
+                  위하여 개인정보를 이용합니다.<br />
+                  5) 서비스 이용기록과 접속 빈도 분석, 서비스 이용에 대한 통계,
+                  서비스 분석 및 통계에 따른 맞춤 서비스 제공 등에 개인정보를
+                  이용합니다.<br />
+                  6) 보안, 프라이버시, 안전 측면에서 이용자가 안심하고 이용할 수
+                  있는 서비스 이용환경 구축을 위해 개인정보를 이용합니다 <br />
+                  7) 만일 서비스 이용시 사용자의 생명이나 타인 및 사회의 안전을
+                  위협하는 경우에 한해 사용자에 관한 정보를 관련 전문인이나
+                  의료진 및 사회에 알릴 수 있습니다. <br />
+                  8) 법원이 사용자의 동의 없이 서비스 관련 정보를 요구할 경우
+                  내담자의 권익이 침해되지 않도록 법원과 조율해야 하며, 정보를
+                  공개하게 될 경우 정보 공개 사실을 사용자에게 알려야 하며
+                  불가피한 경우라도 최소한의 정보만을 공개해야 합니다. <br />
+
+                  <br />
+                  <br />
+                  **4.개인정보의 제공 및 위탁**
+                  <br />
+                  야타브엔터는 원칙적으로 사용자의 동의 없이는 개인정보를 외부에
+                  제공하지 않습니다. 사용자의 동의가 있는 경우에 한해 야타브
+                  개발자 및 게시자, 연구팀과 개인 데이터를 공유할 수 있습니다.
+                  야타브엔터는 제3자의 마케팅을 목적으로 개인 데이터를 제3자와
+                  공유하지 않습니다.
+                  <br />
+                  사용자가 외부 제휴사의 서비스를 이용하기 위해 직접 개인정보
+                  제공에 동의한 경우, 그리고 관련 법령에 근거해 야타브엔터에
+                  개인정보 제출 의무가 발생한 경우, 사용자의 생명이나 안전에
+                  긴급한 위험이 확인되어 이를 해결하기 위한 경우에 한해서만
+                  개인정보를 제공할 수 있습니다.
+                  <br />
+                  야타브엔터는 편리하고 더 나은 서비스를 제공하기 위해 업무 중
+                  일부를 외부에 위탁하고 있습니다
+
+                  <br /><br />
+
+                  **5.개인정보의 파기**
+                  <br />
+                  **야타브에서 수집한 데이터를 보관하는 방법**
+                  <br />
+                  야타브는 사용자가 야타브 서비스를 사용하는 동안 개인정보를
+                  보유하고, 회원 탈퇴 시 사용자의 개인정보를 지체없이
+                  파기합니다. 단 사용자의 동의를 받거나 법령상의 근거가 있지
+                  않는 한 원칙적으로 사용자의 서비스 가입일로부터 서비스를
+                  제공하는 기간 동안에 한하여 사용자의 개인정보를 보유 및
+                  이용하게 됩니다. 사용자가 회원 탈퇴를 요청하거나 개인정보의
+                  수집 및 이용에 대한 동의를 철회하는 경우, 수집/이용 목적을
+                  달성하거나 보유/이용 기간이 종료된 경우, 파기사유 발생시 당해
+                  개인정보를 파기합니다.
+                  <br />
+                  1) 이용자에게 개인정보 보관기관에 대해 회원가입 시 또는 서비스
+                  가입시 동의를 얻은 경우는 다음과 같습니다. <br />
+                  부정 가입 및 이용 방지 - 부정 이용자의 가입인증 휴대전화번호
+                  또는 ID(만 14세 미만의 경우 법정대리인 ID) : 탈퇴일로부터
+                  6개월 보관<br />
+                  - 탈퇴한 이용자의 휴대전화번호(복호화가 불가능한 일방향
+                  암호화(해시처리)) : 탈퇴일로부터 6개월 보관
+                  <br />
+                  <br />
+                  사용자가 원할 경우 언제든지 삭제할 수 있는 데이터가 있는 반면
+                  자동으로 삭제되는 데이터도 있으며, 필요한 경우 야타브가 오랜
+                  기간 동안 보관하는 데이터도 있습니다. 사용자가 데이터를
+                  삭제하면 야타브는 삭제 정책에 따라 데이터를 야타브 서버에서
+                  안전하고 확실하게 삭제하거나 익명 상태로만 보관합니다.
+                  <br />
+                  2) 회사는 다음 법령의 규정에 따라 개인정보를 보관합니다. -
+                  전자상거래 등에서 소비자 보호에 관한 법률<br />
+                  계약 또는 청약철회 등에 관한 기록: 5년 보관<br />
+                  대금결제 및 재화 등의 공급에 관한 기록: 5년 보관<br />
+                  소비자의 불만 또는 분쟁처리에 관한 기록: 3년 보관<br />
+                  - 통신비밀보호법<br />
+                  로그인 기록: 3개월<br />
+
+                  <br /><br />
+                  **6.이용자 및 법정대리인의 권리와 행사 방법**
+                  <br />
+                  1) 사용자는 언제든지 서비스의 홈페이지(www.metaforest.us)의 내
+                  정보 관리 페이지에서 자신의 개인정보를 조회하거나 수정ㆍ삭제할
+                  수 있으며, 자신의 개인정보에 대한 열람을 요청할 수
+                  있습니다.<br />
+                  2) 사용자는 언제든지 개인정보 처리의 정지를 요청할 수 있으며,
+                  법률에 특별한 규정이 있는 등의 경우에는 처리정지 요청을 거부할
+                  수 있습니다.<br />
+                  3) 사용자는 언제든지 ‘회원탈퇴’ 등을 통해 개인정보의 수집 및
+                  이용 동의를 철회할 수 있습니다.<br />
+                  4) 만 14세 미만 아동의 경우, 법정대리인이 아동의 개인정보를
+                  조회하거나 수정 및 삭제, 처리정지, 수집 및 이용 동의를 철회할
+                  권리를 가집니다.<br />
+                  5) 사용자가 개인정보의 오류에 대한 정정을 요청한 경우, 정정을
+                  완료하기 전까지 해당 개인정보를 이용 또는 제공하지 않습니다.
+                  또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정
+                  처리결과를 제3자에게 지체 없이 통지하여 정정이 이루어지도록
+                  하겠습니다.<br />
+                  6) 회사는 이용자의 요청에 의해 해지 또는 삭제된 개인정보에
+                  대해 “5. 개인정보의 파기 ”에 명시된 바에 따라 처리하고 그 외의
+                  용도로 열람 또는 이용할 수 없도록 처리하고 있습니다.<br />
+                  7) 사용자는 야타브에서 수집하는 정보와 이용 방식에 대해
+                  선택권이 있습니다.<br /><br />
+
+                  **7.개인정보보호를 위한 야타브의 노력**
+                  <br />
+                  **안전하고 완전한 삭제 기능 제공**
+                  <br />
+                  사용자가 야타브 계정에 저장된 데이터를 삭제하면 야타브는 제품
+                  및 야타브 시스템에서 해당 데이터를 제거하는 절차를 즉시
+                  시작합니다. 우선 정보가 더 이상 표시되지 않도록 즉시 삭제하는
+                  것을 목표로 하며, 이 정보는 더 이상 사용자의 야타브 사용
+                  환경을 맞춤설정하는 데 사용되지 않습니다.
+                  <br />
+                  그런 다음에는 야타브 보관 시스템에서 데이터를 안전하고
+                  완전하게 삭제하기 위한 절차가 시작됩니다. 데이터를 안전하게
+                  삭제하는 것은 사용자와 고객이 실수로 데이터를 잃어버리지
+                  않도록 보호하는 데 중요한 역할을 합니다. 사용자가 안심할 수
+                  있도록 서버에서 데이터를 완전히 삭제하는 것도 마찬가지로
+                  중요합니다. 일반적으로 이 절차는 삭제 시점으로부터 2개월 정도
+                  걸리며, 대부분 데이터가 실수로 삭제된 경우에 대비하여 마련된
+                  최대 1개월의 복구 기간을 포함하고 있습니다.
+                  <br />
+                  데이터가 삭제되는 야타브의 각 보관 시스템에는 데이터를
+                  안전하고 완전하게 삭제하기 위한 자세한 절차가 마련되어
+                  있습니다. 이러한 절차에는 모든 데이터가 삭제되었는지 확인하기
+                  위해 반복적으로 시스템을 통과하는 과정이나, 실수로 삭제된
+                  데이터를 복구하기 위한 짧은 지연 기간이 포함되기도 합니다.
+                  따라서 데이터를 안전하고 완전하게 삭제하기 위해 시간이 좀 더
+                  필요한 경우 데이터 삭제에 더 오랜 시간이 소요될 수도 있습니다.
+                  <br />
+                  또한 야타브 서비스는 앞으로 발생할지도 모르는 재해로부터
+                  데이터를 더욱 안전하게 보호하기 위해 암호화된 백업 저장소를
+                  사용합니다. 이러한 시스템에는 데이터가 최대 6개월 동안 남아
+                  있을 수 있습니다.
+                  <br />
+                  다른 모든 삭제 절차와 마찬가지로 정기적인 유지 관리, 예상치
+                  못한 가동 중단, 버그, 프로토콜 오류 등으로 인해 이 도움말에
+                  정의된 절차 및 기간이 지연될 수도 있습니다. 야타브에서는
+                  이러한 문제를 탐지하고 해결하기 위한 시스템을 운영하고
+                  있습니다.
+                  <br /><br />
+                  **8.개인정보 보호책임자 및 담당자 안내**
+                  <br />
+                  야타브는 사용자의 개인정보 관련 문의사항 및 불만 처리 등을
+                  위하여 아래와 같이 개인정보 보호책임자 및 담당자를 지정하고
+                  있습니다.
+                  <br />
+                  개인정보 보호책임자
+                  <br />
+                  이름: 이성찬
+                  <br />
+                  전화: 고객센터(02-2039-0633)
+                  <br />
+                  문의: [yatav@yatavent.com](mail to : shing225@yatavent.com)
+                  <br /><br />
+                  **9.본 개인정보처리방침의 적용 범위**
+                  <br />
+                  본 개인정보처리방침은
+                  메타포레스트([www.metaforest.us](http://www.metaforest.us))’
+                  및 관련 제반 서비스(PC 프로그램, 모바일 웹/앱 포함)에
+                  적용되며, 다른 브랜드로 제공되는 서비스에 대해서는 별개의
+                  개인정보처리방침이 적용될 수 있습니다.
+                  <br />
+                  야타브에 링크되어 있는 다른 회사의 웹사이트에서 개인정보를
+                  수집하는 경우, 이용자 동의 하에 개인정보가 제공된 이후에는 본
+                  개인정보처리방침이 적용되지 않습니다.
+                  <br />
+                  **10.개정 전 고지 의무**
+                  <br />
+                  본 개인정보처리방침의 내용 추가, 삭제 및 수정이 있을 경우 개정
+                  최소 7일 전에 ‘공지사항’을 통해 사전 공지를 할 것입니다. 다만,
+                  수집하는 개인정보의 항목, 이용목적의 변경 등과 같이 이용자
+                  권리의 중대한 변경이 발생할 때에는 최소 30일 전에 공지하며,
+                  필요 시 이용자 동의를 다시 받을 수도 있습니다.
+                  <br /><br />
+                  - 공고일자 : 2022년 5월 31일 - 시행일자 : 2022년 5월 31일
+                </p>
+              </div>
+            </div>
+            <div class="agree_layout">
+              <input
+                type="radio"
+                id="contact_agree"
+                name="contact_agree"
+                value="개인정보수집동의"
+              />
+              <p>위 개인정보 수집에 동의 합니다</p>
+            </div>
+          </div>
+          <button type="submit">작성완료</button>
+        </form>
+      </div>
+    </section10>
+
+    <footer>
+      <div class="footer_container">
+        <div class="footer_inner">
+          <div class="footer_text">
+            <div class="footer_title">
+              <h3>(주) 야타브엔터</h3>
+              <div class="footer_icon">
+                <a
+                  href="https://www.youtube.com/channel/UCJwE7_5kQvl6hoDKWuZNDiQ"
+                  target="_blank"
+                  ><img
+                    src="./image/youtube_icon.png"
+                    onmouseover="this.src='./image/youtube_logo_hover.png'"
+                    onmouseout="this.src='./image/youtube_icon.png'"
+                    alt="youtube"
+                /></a>
+                <a href="https://blog.naver.com/yatav_official" target="_blank"
+                  ><img
+                    src="./image/blog_icon.png"
+                    onmouseover="this.src='./image/blog_icon_hover.png'"
+                    onmouseout="this.src='./image/blog_icon.png'"
+                    alt="blog"
+                /></a>
+              </div>
+            </div>
+            <ul class="footer_content" style="padding-left: 0px">
+              <li>대표 | 이성찬, 조은상</li>
+              <li>주소 | 서울특별시 성동구 뚝섬로17가길 48</li>
+              <li>사업자등록번호 | 750-88-01121</li>
+            </ul>
+            <div class="copy">
+              Copyright © YATAVENT Corp. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 인증서 팝업 -->
+    <section id="popup_cert" class="popup_cert">
+      <div id="cert_slide_content" class="cert_slide_content">
+        <div class="controls">
+          <span class="next_slide"
+            ><i class="fa-solid fa-caret-right"></i
+          ></span>
+          <span class="prev_slide"><i class="fa-solid fa-caret-left"></i></span>
+          <span class="cert_close_btn" onclick="cert_close_Popup()">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <div class="slide_wrapper">
+          <ul class="slides">
+            <li>
+              <img src="./image/certification/Corporate1.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/certification/Corporate2.jpg" alt="" />
+            </li>
+            <li>
+              <img src="./image/certification/Corporate3.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/certification/Corporate4.jpg" alt="" />
+            </li>
+            <li>
+              <img src="./image/certification/Corporate5.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 특허 및 MOU -->
+    <section id="popup_cert2" class="popup_cert2">
+      <div id="cert_slide_content2" class="cert_slide_content2">
+        <div class="controls2">
+          <span class="next_slide2"
+            ><i class="fa-solid fa-caret-right"></i
+          ></span>
+          <span class="prev_slide2"
+            ><i class="fa-solid fa-caret-left"></i
+          ></span>
+          <span class="cert_close_btn2" onclick="cert_close_Popup2()">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <div class="slide_wrapper2">
+          <ul class="slides2">
+            <li>
+              <img src="./image/MOU/MOU1.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/MOU/MOU2.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/MOU/MOU3.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/MOU/MOU4.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/MOU/MOU5.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/MOU/MOU6.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/MOU/MOU7.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/MOU/MOU8.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/MOU/MOU9.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/MOU/MOU10.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/MOU/MOU11.png" alt="" />
+            </li>
+            <li>
+              <img src="./image/MOU/MOU12.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- jQuery Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins/objectFitPolyfill.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+
+    <!-- Revolution Slider Addons -->
+
+    <!-- DISTORTION ADD-ON FILES -->
+    <link
+      rel="stylesheet"
+      href="revolution-addons/distortion/css/distortion.css"
+      type="text/css"
+      media="all"
+    />
+    <script
+      type="text/javascript"
+      src="revolution-addons/distortion/js/pixi.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution-addons/distortion/js/revolution.addon.distortion.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.video.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.carousel.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.slideanims.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.actions.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.layeranimation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.kenburn.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.navigation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.migration.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.parallax.min.js"
+    ></script>
+
+    <script src="./tools/cfg.js"></script>
+    <script src="./tools/enums.js"></script>
+    <script src="./tools/libs.js"></script>
+    <script src="./tools/md5.js"></script>
+    <script src="https://unpkg.com/axios@1.0.0/dist/axios.min.js"></script>
+
+    <script>
+      "use strict";
+      async function onClickLogout() {
+        let apiRequest = {
+          data: {},
+        };
+        const _response = await axios.post(apiUrl + "auth/logout", apiRequest, {
+          withCredentials: true,
+        });
+        let response = {};
+        Object.assign(response, _response.data);
+
+        if (response.status === 401) {
+          alert(response.message);
+          storageClear();
+          // deleteAllCookies();
+          window.location.href = "./login.html";
+          return;
+        }
+
+        if (response.status !== 200) {
+          return;
+        }
+        alert("로그아웃 되었습니다.");
+        storageClear();
+        window.location.href = "./index.html";
+      }
+
+      async function getUser() {
+        const _response = await axios.get(apiUrl + "user", {
+          withCredentials: true,
+        });
+        let response = {};
+
+        Object.assign(response, _response.data);
+
+        if (response.status !== 200) {
+          location.href = "./index.html";
+          return;
+        }
+      }
+    </script>
+    <!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+
+    <script type="text/javascript" src="//wsa.mig-log.com/wsalog.js"></script>
+
+    <script type="text/javascript">
+      wsa.inflow("www.metaforest.us");
+      wsa_do(wsa);
+    </script>
+  </body>
+</html>
