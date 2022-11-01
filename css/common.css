@@ -1523,3 +1523,20 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
     height: 380px;
   }
 }
+
+/* popup_page */
+
+.badges {
+  position: fixed;
+  top: 130px;
+  right: 30px;
+  z-index: 20;
+}
+
+.badges .badge {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
