@@ -1540,3 +1540,9 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
+
+.badge img {
+  width: 130px;
+}
+
+
