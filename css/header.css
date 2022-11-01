@@ -76,7 +76,7 @@
   font-size: 30px;
   position: absolute;
   right: 20px;
-  top: 10px;
+  top: 25px;
   display: none;
 }
 
@@ -120,5 +120,10 @@
 
   .nav__menu.active {
     display: flex;
+  }
+
+  .nav__logo img {
+    width: 40%;
+    padding: 7px 0;
   }
 }
