@@ -1394,17 +1394,17 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 
 @media screen and (max-width: 768px) {
   .slide_wrapper {
-    width: 320px;
-    top: 130px;
+    width: 280px;
+    top: 180px;
   }
 
   .controls .prev_slide {
-    top: 290px;
-    left: 13px;
+    top: 310px;
+    left: -13px;
   }
   .controls .next_slide {
-    top: 290px;
-    right: 13px;
+    top: 300px;
+    right: -17px;
   }
 
   .controls .cert_close_btn {
