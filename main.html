@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MQP2VVL");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta
       name="facebook-domain-verification"
       content="ww5k8vto0wx38toeedmzhyj91xswe9"
@@ -34,7 +49,7 @@
       name="viewport"
       content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
     />
-    <title>metaforest-renewal</title>
+    <title>메타포레스트</title>
 
     <!-- FONT -->
     <link
@@ -93,19 +108,24 @@
     <nav class="nav__container">
       <div class="inner">
         <div class="nav__logo">
-          <a href="/" class="logo">
+          <a href="./main.html" class="logo">
             <img src="./image/logo.png" alt="metaforest-logo" width="170px" />
           </a>
         </div>
 
         <ul class="nav__menu">
           <li><a href="#s2" class="menu">서비스 소개</a></li>
-          <li><a href="#s11" class="menu">이용 가이드</a></li>
-          <li><a href="#" class="menu">공지사항</a></li>
-          <li><a href="#s10" class="menu">문의하기</a></li>
+          <li>
+            <a href="metaforest guide_221101_v001.pdf" class="menu"
+              >이용 가이드</a
+            >
+          </li>
+          <li><a href="./board_main.html" class="menu">공지사항</a></li>
+          <li><a href="./contactus.html" class="menu">문의하기</a></li>
+          <li><a href="./profile.html" class="menu">내정보</a></li>
           <li><a onclick="onClickLogout()" class="btn_login">로그아웃</a></li>
           <li>
-            <a href="https://works.do/5j6rGoK" class="btn_FAQ">다운로드</a>
+            <a href="#" class="btn_FAQ" id="btn_download">PC버전 다운로드</a>
           </li>
         </ul>
 
@@ -1175,5 +1195,128 @@
 
     <!-- JavaScript -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- jQuery Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins/objectFitPolyfill.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+
+    <!-- Revolution Slider Addons -->
+
+    <!-- DISTORTION ADD-ON FILES -->
+    <link
+      rel="stylesheet"
+      href="revolution-addons/distortion/css/distortion.css"
+      type="text/css"
+      media="all"
+    />
+    <script
+      type="text/javascript"
+      src="revolution-addons/distortion/js/pixi.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution-addons/distortion/js/revolution.addon.distortion.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.video.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.carousel.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.slideanims.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.actions.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.layeranimation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.kenburn.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.navigation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.migration.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.parallax.min.js"
+    ></script>
+
+    <script src="./tools/cfg.js"></script>
+    <script src="./tools/enums.js"></script>
+    <script src="./tools/libs.js"></script>
+    <script src="./tools/md5.js"></script>
+    <script src="https://unpkg.com/axios@1.0.0/dist/axios.min.js"></script>
+
+    <script>
+      "use strict";
+      async function onClickLogout() {
+        let apiRequest = {
+          data: {},
+        };
+        const _response = await axios.post(apiUrl + "auth/logout", apiRequest, {
+          withCredentials: true,
+        });
+        let response = {};
+        Object.assign(response, _response.data);
+
+        if (response.status === 401) {
+          alert(response.message);
+          storageClear();
+          // deleteAllCookies();
+          window.location.href = "./login.html";
+          return;
+        }
+
+        if (response.status !== 200) {
+          return;
+        }
+        alert("로그아웃 되었습니다.");
+        storageClear();
+        window.location.href = "./index.html";
+      }
+
+      async function getUser() {
+        const _response = await axios.get(apiUrl + "user", {
+          withCredentials: true,
+        });
+        let response = {};
+
+        Object.assign(response, _response.data);
+
+        if (response.status !== 200) {
+          location.href = "./index.html";
+          return;
+        }
+      }
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        getUser();
+      });
+    </script>
+    <!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+
+    <script type="text/javascript" src="//wsa.mig-log.com/wsalog.js"></script>
+
+    <script type="text/javascript">
+      wsa.inflow("www.metaforest.us");
+      wsa_do(wsa);
+    </script>
   </body>
 </html>

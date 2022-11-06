@@ -14,6 +14,7 @@ li {
 
 a {
   text-decoration: none;
+  color: #313131;
 }
 
 button a {
@@ -79,6 +80,13 @@ body {
   position: absolute;
   top: 40px;
 }
+
+@media screen and (max-width: 768px) {
+  .swiper-slide p {
+    font-size: 20px;
+  }
+}
+
 /* section_main */
 
 .main_banner {
@@ -103,7 +111,7 @@ body {
   z-index: 31;
 }
 
-.main_text span {
+.main_text > span {
   font-size: 40px;
   font-weight: lighter;
 }
@@ -279,7 +287,7 @@ body {
   margin: 0 auto;
   text-align: center;
   position: relative;
-  top: 50px;
+  top: 29px;
 }
 
 .section2_text h4 {
@@ -295,7 +303,7 @@ body {
 
 .section2_icon {
   display: flex;
-  margin-top: 83px;
+  margin-top: 79px;
 }
 
 .section2_icon .icon_image {
@@ -321,7 +329,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .section2_container {
-    height: 205%;
+    height: 1780px;
   }
 
   .section2_icon {
@@ -345,13 +353,13 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1500px) {
   .section2_container {
-    height: 130%;
+    height: 900px;
   }
 }
 
 @media screen and (min-width: 1930px) {
   .section2_container {
-    height: 70%;
+    height: 920px;
   }
 }
 
@@ -409,7 +417,7 @@ body {
 .cert_check {
   width: 100%;
   position: absolute;
-  bottom: 60px;
+  bottom: 76px;
   cursor: pointer;
 }
 
@@ -469,7 +477,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .section3_container {
-    height: 200%;
+    height: 1800px;
   }
 
   .section3_icon {
@@ -477,7 +485,7 @@ body {
     margin-top: 90px;
   }
   .section3_text h4 {
-    font-size: 22px;
+    font-size: 20px;
     margin: 0 auto;
   }
 
@@ -505,13 +513,13 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1500px) {
   .section3_container {
-    height: 125%;
+    height: 900px;
   }
 }
 
 @media screen and (min-width: 1930px) {
   .section3_container {
-    height: 70%;
+    height: 900px;
   }
 }
 
@@ -718,7 +726,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 
 @media screen and (max-width: 768px) {
   .section4_container {
-    height: 62%;
+    height: 590px;
   }
 
   .section4_icon {
@@ -737,13 +745,20 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
   .section4_text span {
     font-size: 16px;
   }
+
+  .ON_TEXT {
+    max-width: 300px;
+    left: -7px;
+  }
+
+  .OFF_TEXT {
+    max-width: 300px;
+    left: -9px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1500px) {
   .section4_container {
-    height: 75%;
-  }
-  .background_char .char2 {
-    right: -70px;
+    height: 540px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -903,7 +918,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 
 @media screen and (min-width: 768px) and (max-width: 1500px) {
   .section6_container {
-    height: 100%;
+    height: 710px;
   }
   .section6_btn {
     position: relative;
@@ -1172,7 +1187,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 @media screen and (max-width: 768px) {
   .section9_container {
     width: 100%;
-    height: 110%;
+    height: 920px;
     background-color: #fff;
     position: relative;
   }
@@ -1207,13 +1222,13 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 
 @media screen and (min-width: 768px) and (max-width: 1500px) {
   .section9_container {
-    height: 105%;
+    height: 760px;
   }
 }
 
 @media screen and (min-width: 1930px) {
   .section9_container {
-    height: 60%;
+    height: 770px;
   }
 }
 
@@ -1221,7 +1236,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 
 .method_background {
   width: 100%;
-  height: 80%;
+  height: 77%;
   background-color: #55689d;
   margin: 0 auto;
   text-align: center;
@@ -1279,7 +1294,7 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
   }
 
   .method_background {
-    height: 160%;
+    height: 1350px;
   }
 
   .method_context {
@@ -1302,13 +1317,13 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 
 @media screen and (min-width: 768px) and (max-width: 1500px) {
   .method_background {
-    height: 100%;
+    height: 720px;
   }
 }
 
 @media screen and (min-width: 1930px) {
   .method_background {
-    height: 58%;
+    height: 734px;
   }
 }
 
@@ -1418,6 +1433,28 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1500px) {
+  .slide_wrapper {
+    width: 1070px;
+    top: 240px;
+  }
+
+  .controls .prev_slide2 {
+    top: 400px;
+    left: 70px;
+  }
+
+  .controls .next_slide2 {
+    top: 390px;
+    right: 70px;
+  }
+
+  .controls .cert_close_btn2 {
+    top: 150px;
+    right: 181px;
+  }
+}
+
 /* certification slide */
 
 .cert_slide_content2 {
@@ -1524,13 +1561,35 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1500px) {
+  .slide_wrapper2 {
+    width: 1070px;
+    top: 240px;
+  }
+
+  .controls2 .prev_slide2 {
+    top: 400px;
+    left: 70px;
+  }
+
+  .controls2 .next_slide2 {
+    top: 390px;
+    right: 70px;
+  }
+
+  .controls2 .cert_close_btn2 {
+    top: 150px;
+    right: 181px;
+  }
+}
+
 /* popup_page */
 
 .badges {
   position: fixed;
   top: 130px;
   right: 30px;
-  z-index: 20;
+  z-index: 21;
 }
 
 .badges .badge {
@@ -1544,5 +1603,3 @@ input[type="checkbox"]:not(:checked) + label .ON_TEXT {
 .badge img {
   width: 130px;
 }
-
-

@@ -1,0 +1,430 @@
+.content-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* layout */
+html {
+  height: 100%;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  height: 100%;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+#header {
+  padding-top: 12.875rem;
+  /*padding-bottom:1.25rem;*/
+  text-align: center;
+}
+
+#wrapper {
+  position: relative;
+  height: 100%;
+}
+
+/* --- style --- */
+h2#logo {
+  width: 50%;
+  max-width: 364px;
+  margin: 0 auto 12.25rem;
+}
+
+h2#logo img {
+  width: 90%;
+}
+
+.headline1 {
+  font-size: 1.9rem;
+  line-height: 2rem;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  letter-spacing: 0;
+  color: #537600;
+  font-weight: 1000;
+  margin: -187px -73px 2.7rem -73px;
+  height: 93px;
+  padding-top: 33px;
+  background-color: #f1f1f1;
+  border-top: 2px solid #537600;
+}
+
+.headline2 {
+  font-size: 1.9rem;
+  line-height: 2rem;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  letter-spacing: 0;
+  color: #103b73;
+  font-weight: 1000;
+  margin: -187px -73px 2.7rem -73px;
+  height: 93px;
+  padding-top: 33px;
+  background-color: #f1f1f1;
+  border-top: 2px solid #103b73;
+}
+
+.subline {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  letter-spacing: 0;
+  color: #6a6a6a;
+  font-weight: 400;
+  margin: 0 0 1.8rem 0;
+}
+
+.contentBox1 {
+  width: 85%;
+  max-width: 915px;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  padding: 6rem 4.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contentBox2 {
+  width: 85%;
+  max-width: 915px;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  padding: 6rem 4.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subtext1 {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.subtext1 p {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.subtext2 {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.subtext2 p {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-size: 18px;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  #content {
+    padding: 4rem 5rem;
+  }
+  .content-container {
+    display: block;
+  }
+  .contentBox1 {
+    margin-bottom: 200px;
+  }
+
+  .headline1 {
+    font-size: 1.9rem;
+    line-height: 2rem;
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    letter-spacing: 0;
+    color: #537600;
+    font-weight: 1000;
+    width: 121%;
+    margin: -151px -61px 3.7rem -74px;
+    height: 93px;
+    padding-top: 32px;
+    background-color: #f1f1f1;
+    border-top: 2px solid #537600;
+  }
+
+  .headline2 {
+    font-size: 1.9rem;
+    line-height: 2rem;
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    letter-spacing: 0;
+    color: #103b73;
+    font-weight: 1000;
+    width: 121%;
+    margin: -151px -61px 3.7rem -74px;
+    height: 93px;
+    padding-top: 32px;
+    background-color: #f1f1f1;
+    border-top: 2px solid #103b73;
+  }
+
+  .subtext1 p {
+    line-height: 32px;
+    font-size: 22px;
+  }
+
+  .subtext2 p {
+    line-height: 32px;
+    font-size: 22px;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+.box {
+  display: block;
+  width: 40%;
+  height: 4.25rem;
+  border: solid 1px #ffffff;
+  padding: 10px 14px;
+  box-sizing: border-box;
+  background: #fff;
+  position: relative;
+  right: -120px;
+}
+
+.box2 {
+  display: block;
+  width: 100%;
+  height: 4.25rem;
+  border: solid 1px #292929;
+  padding: 10px 14px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.explanation {
+  position: relative;
+  bottom: -43px;
+  right: -8px;
+}
+
+.int {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #fff;
+  font-size: 16px;
+}
+
+input {
+  font-family: "NexonLv2Gothic", Malgun Gothic, "맑은 고딕", Helvetica,
+    sans-serif;
+}
+
+input::placeholder {
+  color: #a3a3a3;
+}
+
+.box.int_id {
+  padding-right: 110px;
+}
+
+.box.int_pass {
+  padding-right: 40px;
+}
+
+.box.int_pass_check {
+  padding-right: 40px;
+}
+
+.step_url {
+  position: absolute;
+  top: 16px;
+  right: 13px;
+  font-size: 15px;
+  color: #8e8e8e;
+}
+
+.pswdImg {
+  width: 18px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.contentBox {
+  border: 1px solid #e9e9e9;
+}
+
+.contentBox label {
+  display: none;
+}
+.contentBox div {
+  margin-bottom: 10px;
+}
+
+#bir_wrap,
+#mobile_wrap {
+  display: table;
+  width: 100%;
+}
+
+#bir_yy {
+  display: table-cell;
+  width: 147px;
+}
+
+#bir_mm {
+  display: table-cell;
+  width: 147px;
+  vertical-align: middle;
+}
+
+#bir_dd {
+  display: table-cell;
+  width: 147px;
+}
+
+#bir_mm,
+#bir_dd {
+  padding-left: 10px;
+}
+
+#mobile_wrap {
+  display: table;
+  width: 100%;
+}
+
+#mobile_digit {
+  display: table-cell;
+  width: 80%;
+  vertical-align: middle;
+}
+
+#mobile_btn {
+  display: table-cell;
+  width: 20%;
+  padding-left: 10px;
+}
+
+select {
+  width: 100%;
+  height: 29px;
+  font-size: 15px;
+  background: #fff
+    url(https://static.nid.naver.com/images/join/pc/sel_arr_2x.gif) 100% 50%
+    no-repeat;
+  background-size: 20px 8px;
+  -webkit-appearance: none;
+  display: inline-block;
+  text-align: start;
+  border: none;
+  cursor: default;
+  font-family: Dotum, "돋움", Helvetica, sans-serif;
+}
+
+.contentBox .btn_area {
+  margin: 40px 0 0;
+}
+
+#btnJoin {
+  width: 100%;
+  padding: 21px 0 17px;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Dotum, "돋움", Helvetica, sans-serif;
+}
+
+#btnSend {
+  padding: 17px 0;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Dotum, "돋움", Helvetica, sans-serif;
+}
+
+#btnFind1 {
+  width: 100%;
+  height: 4.25rem;
+  box-sizing: border-box;
+  padding: 1.3rem 0 1rem;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  background-color: #537600;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "NexonLv2Gothic", Malgun Gothic, "맑은 고딕", Helvetica,
+    sans-serif;
+  margin-top: 50px;
+}
+
+#btnFind2 {
+  width: 100%;
+  height: 4.25rem;
+  box-sizing: border-box;
+  padding: 1.3rem 0 1rem;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  background-color: #103b73;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "NexonLv2Gothic", Malgun Gothic, "맑은 고딕", Helvetica,
+    sans-serif;
+  margin-top: 50px;
+}
+
+.modal_box {
+  border: 5px solid #f1f1f1;
+  padding: 30px;
+  text-align: left;
+}
+
+.modal_line {
+  border-top: 3px solid #3a3a3a;
+  border-bottom: 3px solid #f1f1f1;
+  padding: 10px;
+}
+
+.modal_info {
+  margin-top: 20px;
+}
+
+.modal_title_text {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: left;
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: left;
+}
+.modal-header {
+  background-color: #e6e6e6;
+}
+
+#modal-footer-btn2 {
+  background-color: #537600;
+}

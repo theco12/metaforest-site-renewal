@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MQP2VVL");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta
       name="facebook-domain-verification"
       content="ww5k8vto0wx38toeedmzhyj91xswe9"
@@ -34,7 +49,7 @@
       name="viewport"
       content="width=device-width,initial-scale=1,user-scalable=no-scale=1,minimum-scale=1,maximum"
     />
-    <title>metaforest-renewal</title>
+    <title>메타포레스트</title>
 
     <!-- FONT -->
     <link
@@ -174,7 +189,7 @@
 
       <div class="scrolling">
         <img src="./image/scroll/Icon1.png" alt="" />
-        <img class="arrow11" src="./image/scroll/Icon2.png" alt="" />
+        <img class="arrow11" src="./image/scroll/icon22.png" alt="" />
       </div>
     </section>
     <!-- section2 -->
@@ -1165,5 +1180,146 @@
         </div>
       </div>
     </section>
+
+    <!-- jQuery Scripts -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins/objectFitPolyfill.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+
+    <!-- Revolution Slider Addons -->
+
+    <!-- DISTORTION ADD-ON FILES -->
+    <link
+      rel="stylesheet"
+      href="revolution-addons/distortion/css/distortion.css"
+      type="text/css"
+      media="all"
+    />
+    <script
+      type="text/javascript"
+      src="revolution-addons/distortion/js/pixi.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution-addons/distortion/js/revolution.addon.distortion.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.video.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.carousel.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.slideanims.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.actions.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.layeranimation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.kenburn.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.navigation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.migration.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.parallax.min.js"
+    ></script>
+
+    <script src="./tools/cfg.js"></script>
+    <script src="./tools/enums.js"></script>
+    <script src="./tools/libs.js"></script>
+    <script src="./tools/md5.js"></script>
+    <script src="https://unpkg.com/axios@1.0.0/dist/axios.min.js"></script>
+    <script>
+      "use strict";
+      async function getUser() {
+        const _response = await axios.get(apiUrl + "user", {
+          withCredentials: true,
+        });
+        let response = {};
+
+        Object.assign(response, _response.data);
+
+        if (response.status !== 401) {
+          location.href = "./main.html";
+          return;
+        }
+      }
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        getUser();
+      });
+    </script>
+
+    <script>
+      function sendEmail() {
+        let radio = document.getElementById("contact_agree");
+        if (!radio.checked) {
+          alert("개인정보 수집에 동의해주세요.");
+          return;
+        }
+
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "thecorative@naver.com",
+          Password: "1679F10A2EF8C4B74C2B7EA2D8362FA8659E",
+          To: "yatav@yatavent.com",
+          From: "thecorative@naver.com",
+          Subject: "메타포레스트 Contact Us 문의",
+          Body:
+            "문의유형 : " +
+            document.getElementById("selection").value +
+            "<br> 소속기관/회사명: " +
+            document.getElementById("company").value +
+            "<br> 담당자: " +
+            document.getElementById("name").value +
+            "<br> 연락처: " +
+            document.getElementById("phone").value +
+            "<br> 이메일: " +
+            document.getElementById("email").value +
+            "<br> 제목: " +
+            document.getElementById("title").value +
+            "<br> 내용: " +
+            document.getElementById("message").value,
+        }).then((message) => alert("Message sent sucessfully"));
+      }
+    </script>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+      "use strict";
+      window.onunload = function () {
+        // storageClear();
+      };
+    </script>
+    <!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+
+    <script type="text/javascript" src="//wsa.mig-log.com/wsalog.js"></script>
+
+    <script type="text/javascript">
+      wsa.inflow("www.metaforest.us");
+      wsa_do(wsa);
+    </script>
   </body>
 </html>
