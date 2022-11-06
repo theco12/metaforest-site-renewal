@@ -1,0 +1,318 @@
+/* layout */
+html {
+    height: 100%;
+    font-size: 16px;
+  font-family: 'NexonLv2Gothic', Malgun Gothic, '맑은 고딕', Helvetica, sans-serif;
+  }
+  
+  @media screen and (max-width:1024px) {
+    html {
+        font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    html {
+        font-size: 12px;
+    }
+  
+  }
+
+body {
+    margin: 0;
+    height: 100%;
+    background: #f5f6f7;
+    font-family: 'NexonLv2Gothic', Malgun Gothic, '맑은 고딕', Helvetica, sans-serif;
+}
+h2#logo {
+    width: 50%;
+    max-width: 233px;
+    margin: 0 auto 4.25rem
+  }
+  
+  h2#logo img {
+    width: 100%
+  }
+
+#header {
+    padding-top: 62px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#wrapper {
+    position: relative;
+    height: 100%;
+}
+
+#content {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 460px;
+}
+
+
+
+
+/* 입력폼 */
+
+input:focus {
+    outline: none;
+}
+
+
+h3 {
+    margin: 19px 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.join_title label{
+    font-size: 1.125rem;
+    color:#171717;
+}
+
+.box {
+    display: block;
+    width: 100%;
+    height: 51px;
+    border: solid 1px #dadada;
+    padding: 10px 14px 10px 14px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+}
+
+.int {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 29px;
+    border: none;
+    background: #fff;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.int_email{
+    width:300px;
+    height: 51px;
+    display:inline-block;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+    border: solid 1px #dadada;
+    float: left;
+}
+.int_email .int{
+    width:46%;
+    height: 49px;
+    padding: 10px 14px 10px 14px;
+    display:inline-block;
+    box-sizing: border-box;
+}
+
+.int_email select{
+    width:45%;
+    height: 49px;
+    padding: 10px 14px 10px 14px;
+    box-sizing: border-box;
+}
+
+.int_email select option:first-child{
+    color:#939393
+}
+
+#email_btn{display:inline-block;padding-left:10px}
+
+
+.int_code{
+    width:300px;
+    height: 51px;
+    display:inline-block;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+    border: solid 1px #dadada;
+    float: left;
+}
+.int_code .int{
+    padding: 10px 14px 10px 14px;
+    height: 100%;
+}
+
+#code_btn{display:inline-block;padding-left:10px}
+
+input {
+    font-family: Dotum,'돋움',Helvetica,sans-serif;    
+}
+
+.box.int_id {
+    padding-right: 110px;
+}
+
+.box.int_pass {
+    padding-right: 40px;
+}
+
+.box.int_pass_check {
+    padding-right: 40px;
+}
+
+.step_url {
+    /*@naver.com*/
+    position: absolute;
+    top: 16px;
+    right: 13px;
+    font-size: 15px;
+    color: #8e8e8e;
+}
+
+.pswdImg {
+    width: 18px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.contentBox {
+    border: 1px solid #ced4da; 
+    border-radius: 4px;
+}
+
+#bir_wrap, #mobile_wrap {
+    display: table;
+    width: 100%;
+}
+
+#bir_yy {
+    display: table-cell;
+    width: 147px;
+    
+}
+
+#bir_mm {
+    display: table-cell;
+    width: 147px;
+    vertical-align: middle;
+}
+
+#bir_dd {
+    display: table-cell;
+    width: 147px;
+}
+
+#bir_mm, #bir_dd {
+    padding-left: 10px;
+}
+
+#mobile_wrap {
+    display: table;
+    width: 100%;
+}
+
+#mobile_digit {
+    display: table-cell;
+    width: 80%;
+    vertical-align: middle;
+}
+
+#mobile_btn {
+    display: table-cell;
+    width: 20%;
+}
+
+#mobile_btn {
+    padding-left: 10px;
+}
+
+
+select {
+    width: 100%;
+    height: 29px;
+    font-size: 15px;
+    background: #fff url(https://static.nid.naver.com/images/join/pc/sel_arr_2x.gif) 100% 50% no-repeat;
+    background-size: 20px 8px;
+    -webkit-appearance: none;
+    display: inline-block;
+    text-align: start;
+    border: none;
+    cursor: default;
+    font-family: Dotum,'돋움',Helvetica,sans-serif;
+}
+
+/* 에러메세지 */
+
+.error_next_box {
+    margin-top: 9px;
+    font-size: 12px;
+    color: red;    
+    display: none;
+}
+
+.alert_next_box{
+    
+    font-size: 12px;
+    color: blue;    
+
+}
+
+#alertTxt {
+    position: absolute;
+    top: 19px;
+    right: 38px;
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+/* 버튼 */
+
+.btn_area {
+    margin: 30px 0 91px;
+}
+
+#btnJoin {
+    width: 100%;
+    padding: 21px 0 17px;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'NexonLv2Gothic', Malgun Gothic, '맑은 고딕', Helvetica, sans-serif;
+}
+
+#btnSend {
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'NexonLv2Gothic', Malgun Gothic, '맑은 고딕', Helvetica, sans-serif;
+    width: 147px;
+    height: 51px;
+    background-color: #232323;
+    font-size: 14px;
+    display: inline-block;
+    box-sizing:border-box;
+}
+
+#btnFind {
+    width: 100%;
+    padding: 21px 0 17px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'NexonLv2Gothic', Malgun Gothic, '맑은 고딕', Helvetica, sans-serif;
+}

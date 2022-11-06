@@ -44,7 +44,7 @@ var flkty = new Flickity(elem, {
 });
 
 // 기업증명서 slider
-var slides = document.querySelector(".slides"),
+let slides = document.querySelector(".slides"),
   slide = document.querySelectorAll(".slides li"),
   currentIdx = 0;
 (slideCount = slide.length),
@@ -88,7 +88,7 @@ function cert_close_Popup() {
 }
 
 // 특허 및 MOU slider
-var slides2 = document.querySelector(".slides2"),
+let slides2 = document.querySelector(".slides2"),
   slide2 = document.querySelectorAll(".slides2 li"),
   currentIdx2 = 0;
 (slideCount2 = slide2.length),
@@ -138,7 +138,6 @@ const badgeEl = document.querySelector(".badges");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    console.log("window.scrollY");
     if (window.scrollY > 500) {
       gsap.to(badgeEl, 0.6, {
         opacity: 0,
@@ -154,3 +153,30 @@ window.addEventListener(
   }, 300)
 );
 // _.throttle(함수, 시간)
+
+const fadeEls = document.querySelectorAll(".visual .fade-in");
+
+fadeEls.forEach(function (fadeEl, index) {
+  gsap.to(fadeEl, 1, {
+    delay: (index + 1) * 0.5, //0.7 1.4 2.1 2.7
+    opacity: 1,
+  });
+});
+
+// 다운로드 링크 PC/모바일
+let downclick_m = document.getElementById("btn_download");
+let mql = window.matchMedia("screen and (max-width: 768px)");
+
+if (mql.matches) {
+  downclick_m.addEventListener("click", function () {
+    alert(
+      `PC버전은 PC에서 다운로드가 가능합니다. 모바일 어플 다운로드는 준비중에 있습니다.`
+    );
+  });
+  // console.log("화면의 너비가 768px 보다 작습니다.");
+} else {
+  downclick_m.addEventListener("click", function () {
+    location.href = "https://works.do/5j6rGoK";
+  });
+  // console.log("화면의 너비가 768px 보다 큽니다.");
+}

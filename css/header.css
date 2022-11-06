@@ -80,7 +80,7 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .nav__container {
     display: block;
     flex-direction: column;
@@ -94,7 +94,7 @@
   .nav__menu {
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 87%;
     display: none;
     margin: 0;
   }
@@ -103,6 +103,8 @@
     text-align: center;
     padding: 25px;
     border-bottom: 1px solid rgb(206, 206, 206);
+    position: relative;
+    left: 13px;
   }
 
   .nav__menu li:nth-child(1) {
@@ -125,5 +127,32 @@
   .nav__logo img {
     width: 40%;
     padding: 7px 0;
+  }
+
+  .nav__menu .btn_FAQ {
+    color: #5a5a5a;
+    border: none;
+    background-color: #fff;
+    font-weight: 400;
+  }
+
+  .nav__menu .btn_FAQ:hover {
+    color: #313131;
+    border: none;
+  }
+
+  .nav__menu .btn_login {
+    background-color: #fff;
+    padding: 10px 20px;
+    color: #313131;
+    width: 94px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav__menu .btn_login:hover {
+    color: #1fa170;
+    background-color: #fff;
   }
 }
